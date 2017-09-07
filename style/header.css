@@ -1,0 +1,98 @@
+ul, li{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	margin: 0;
+}
+#header{
+	height: 4vw;
+}
+#links_logo{
+	
+}
+.links_logo{
+	position: absolute;
+    font-size: 1vw;
+    font-family: "Roboto", sans-serif;
+    top: 1.5vw;
+    left: 17vw;
+    color: rgb(157, 157, 157);
+}
+.logo{
+	position: relative;
+    left: 7vw;
+    top: 1.2vw;
+}
+#links_logo img{
+	width: 7%;
+}
+#links_logo li{
+	display: inline;
+    list-style: none;
+    margin-right: 1.2vw;
+	cursor: pointer;
+}
+#links{
+	position: absolute;
+    font-size: 1vw;
+    font-family: "Roboto", sans-serif;
+    top: 1.5vw;
+    right: 11vw;
+    color: rgb(157, 157, 157);
+}
+#links li{
+	display: inline;
+    list-style: none;
+    margin-right: 1.2vw;
+	cursor: pointer;
+}
+#lang{
+	position: absolute;
+    font-size: 1vw;
+    font-family: "Roboto", sans-serif;
+    top: 1.5vw;
+    right: 3vw;
+    color: rgb(157, 157, 157);
+}
+#lang li{
+	display: inline;
+    list-style: none;
+    margin-right: 0.2vw;
+	cursor: pointer;
+}
+#banner{
+    height: 40vw;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner_text{
+	padding-top: 18vw;
+}
+#banner h1{
+	font-family: "Baloo", sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 500;
+}
+#banner h2{
+	font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    margin-top: 2vw;
+    font-size: 2vw;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 900px){
+
+
+}
