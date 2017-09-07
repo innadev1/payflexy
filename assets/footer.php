@@ -69,18 +69,20 @@
 	
 	<div class="flex">
 		<form action="index.php" method="post" name ="subForm" class="inputs" >
-			<div>
-				<input class="footer_input" type="text" name="email" placeholder="Email"></input>
+			<div class="inputs">
+				<div><p>Phone number</p></div>
+				<input class="footer_input" type="text" name="email"></input>
 			</div>
 
-			<div>
-				<input class="footer_input" type="text" name="phone" placeholder="phone"></input>
+			<div class="inputs">
+				<div><p>Email</p></div>
+				<input class="footer_input" type="text" name="phone"></input>
 				<!-- <button class="subscribe"> -->
 			</div>
 				
 			<!-- </button> -->
 			<div class="submit">
-				<input class="footer_button" type="submit" name="sent" value="sent"></input>
+				<input class="footer_button" type="submit" name="sent" value="SUBMIT"></input>
 			</div>
 		</form>
 			

@@ -76,7 +76,15 @@ body{
 }
 .wrap div img{
 	width: 35%;
-    padding: 0.5vw;
+    padding: vw;
+}
+.wrap div h1{
+	font-size: 0.8vw;
+    font-family: "Myriad Pro", sans-serif;
+    color: rgb(159, 159, 159);
+    line-height: 1vw;
+    text-align: center;
+	font-weight: 300;
 }
 #what_you_get h2{
 	font-size: 2.2vw;
@@ -89,14 +97,14 @@ body{
 	margin-top: 4vw;
 }
 #what_you_get p{
-	font-size: 0.9vw;
+	font-size: 0.7vw;
     font-family: "Myriad Pro", sans-serif;
     color: rgb(159, 159, 159);
-    line-height: 1.5vw;
+    line-height: 1vw;
     text-align: center;
-    padding-left: 32vw;
-    padding-right: 32vw;
-	margin-top: 3vw;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    margin-top: 3vw;
 }
 #second_wave{
 	height: 44.5vw;
@@ -119,12 +127,43 @@ body{
     display: flex;
     justify-content: center;	
 }
+.wrap2 table th{
+	height: 7vw;
+}
 .wrap2 div{
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
     width: 16vw;
     height: 17vw;
     margin: 1vw;
     padding: 1vw;
+	text-align:center;
+}
+.wrap2 div img{
+	width: 35%;
+}
+.wrap2 div h1{
+	font-size: 0.8vw;
+    font-family: "Myriad Pro", sans-serif;
+    color: rgb(159, 159, 159);
+    line-height: 1vw;
+    text-align: center;
+	font-weight: 300;
+}
+.wrap2 div h4{
+	font-size: 1vw;
+    font-family: "Myriad Pro", sans-serif;
+    color: rgb(0, 198, 216);
+    line-height: 2vw;
+    text-align: center;
+	font-weight: 300;
+}
+.wrap2 div h3{
+	font-size: 0.8vw;
+    font-family: "Myriad Pro", sans-serif;
+    color: rgb(0, 198, 216);
+    line-height: 1vw;
+    text-align: center;
+	font-weight: 300;
 }
 .flex_button {
     display: -webkit-box;
@@ -159,6 +198,33 @@ body{
     text-align: center;
     font-weight: 500;
 	margin: 0;
+}
+.card{
+	padding-left: 22vw;
+    padding-right: 22vw;
+}
+.textaboutcard{
+	width: 40vw;
+    padding: 5vw;
+}
+.card h1{
+	font-size: 1.5vw;
+    font-family: "Roboto", sans-serif;
+    color: rgb(0, 198, 216);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+.card p{
+	font-size: 0.9vw;
+    font-family: "Myriad Pro", sans-serif;
+    color: rgb(159, 159, 159);
+    line-height: 1.1vw;
+    text-align: justify;
+}
+.card_photo img{
+	width: 20vw;
+	padding-top: 4vw;
 }
 
 @media screen and (max-width: 900px){

@@ -61,21 +61,24 @@
 	height: 2vw;
 }
 .submit{
-	padding-top: 4vw;
-	margin-left: 3vw;
-	margin-right: 3vw;
+	top: -4.2vw;
+    position: relative;
+    left: 18vw;
 }
-.submit button{
+.footer_button{
 	background-color: #00d8db;
 	color: white;
-	padding: 0.5vw 1.8vw;
+	padding: 0.3vw 1.8vw;
 	border-radius: 5vw;
-	border: none;
+	border: 2px solid #00d8db !important;
 	font-size: 1vw;
+	width: 6vw !important;
 }
 .button{
 	text-align: center;
 	padding-top: 4vw;
+	padding-left: 15vw;
+	position: relative;
 }
 .button button{
 	background-image: linear-gradient(to left, #e4768a, #dd9869);
