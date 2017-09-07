@@ -14,7 +14,9 @@
 		<div>
 			<?php include 'assets/header.php'; ?>
 			
-
+			<div id="about"></div>
+			
+			<div id="second_wave"></div>
 			
 			<?php include 'assets/footer.php'; ?>
 
