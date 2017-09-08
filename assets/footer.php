@@ -11,7 +11,7 @@
 		$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 		
 		if(!preg_match($email_exp,$email)) {
-			echo "<script>alert('kluuda');</script>";
+			echo "<script>alert('Please enter email!');</script>";
 
 		}else{
 		

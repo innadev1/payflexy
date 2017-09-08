@@ -5,7 +5,7 @@
     // print_r($_SESSION);
 
     try {
-        $db = new PDO( "mysql:host=localhost;dbname=payflexy;charset=utf8", "root", "" );
+        $db = new PDO( "mysql:host=localhost;dbname=payflexy;charset=utf8", "payflexy", "payflexy123" );
         // var_dump($db);
     }
 
