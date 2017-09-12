@@ -22,6 +22,8 @@
 
 	<div id="lang">
 		<ul>
+
+		
 			<li>EN</li>
 			<li>|</li>
 			<li>RU</li>
@@ -35,4 +37,4 @@
 		<h1>payflexy</h1>
 		<h2>team of experianced professionals in the<br>field of e-commerce</h2>
 	</div>
-</div>
+</div><!--COMMENT-->

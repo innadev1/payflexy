@@ -1,5 +1,13 @@
+<?php
+	include ('assets/connect.php');
+	include ('assets/lang.php');
+
+?>
+
+
 <html>
-    <head>     
+    <head>   
+		<meta name="viewport" content="width=device-width, initial-scale=1">  
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet"> 
 		<link rel="stylesheet" type="text/css" href="style/index.css">
@@ -7,6 +15,7 @@
         <title>payflexy</title>
 		
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/hammer.js"></script>		
 		<script type="text/javascript" src="js/cnt.js"></script>		
 
     </head>
@@ -19,9 +28,9 @@
 			<div id="about">
 				<canvas id="c2" style="z-index: 0;"></canvas>	
 				<div class="info1" style="z-index: 1;position: relative;">
-					<h1>We are a team of <br>
-					experienced professionals in <br>
-					the field of e-commerce</h1>
+					<h1><?php echo $language[$lang]['team_of_exp1'] ?><br>
+					<?php echo $language[$lang]['team_of_exp2'] ?><br>
+					<?php echo $language[$lang]['team_of_exp3'] ?></h1>
 					<p>
 					We offer payment solutions for various businesses in Europe, CIS and worldwide. 
 					Having a wide network of trustworthy partners, we are always ready to make a 
@@ -90,7 +99,7 @@
 					<div><button>Payments monitoring departments</button></div>
 				</div>
 				
-				<div class="card flex">
+				<div class="card flex" id="pan2">
 					<div class="textaboutcard visable">
 						<h1>VISA and MasterCard </h1>
 						<p>VISA and MasterCard are the most famous and popular 
@@ -133,7 +142,7 @@
 					<div class="card_photo"></div>
 				</div>
 				
-				<div class="wrap2">
+				<div class="wrap2" id="pan1">
 					<div class="ewallets">
 						<table>
 						<tr>
@@ -142,7 +151,7 @@
 						<tr>
 						  <td>
 							<h4>E-WALLETS</h4>
-							<h1>With the development of e-commerce, many users prefer electronic wallets as a solution for settlements online both for private transfers <!--and for their business activity, refusing from bank services, because working with e-wallets takes less time and expenses. We offer integration of the system of accepting payments through e-wallets for your ICO project. You will be able to receive payments from the clients of most famous e-wallets, such as PayPal, Skrill, Neteller, Qiwi, etc. Such transfers take less time and money, and investors can make payments directly from their e-wallets to your account.--></h1>
+							<h1>With the development of e-commerce, many users prefer electronic wallets as a solution for settlements online both for private transfers <s>and for their business activity, refusing from bank services, because working with e-wallets takes less time and expenses. We offer integration of the system of accepting payments through e-wallets for your ICO project. You will be able to receive payments from the clients of most famous e-wallets, such as PayPal, Skrill, Neteller, Qiwi, etc. Such transfers take less time and money, and investors can make payments directly from their e-wallets to your account.</s></h1>
 							<h3 read="ewallets">read more</h3>
 						  </td>
 						</tr>
@@ -156,7 +165,7 @@
 						<tr>
 						  <td>
 							<h4>WESTERN UNION TRANSFERS</h4>
-							<h1>PAYFLEXY offers a unique possibility to accept investments for your ICO project through the famous payment system Western Union. It is <!--simple, convenient and accessible all over the world – as an alternative to bank accounts, cards and electronic. With Western Union you will be able to receive investments in various popular currencies. Western Union transfers are characterized by the high security level – you and your customer can be sure in safety of your funds.--></h1>
+							<h1>PAYFLEXY offers a unique possibility to accept investments for your ICO project through the famous payment system Western Union. It is <s> simple, convenient and accessible all over the world – as an alternative to bank accounts, cards and electronic. With Western Union you will be able to receive investments in various popular currencies. Western Union transfers are characterized by the high security level – you and your customer can be sure in safety of your funds.</s></h1>
 							<h3 read="western">read more</h3>
 						  </td>
 						</tr>
@@ -172,7 +181,7 @@
 					<tr>
 					  <td>
 						<h4>BANK TRANSFERS</h4>
-						<h1>For investors, who do not have the possibility to take part in the ICO project with a payment card, we offer bank transfers  Bank transfer <!--(Wire-transfer) is a reliable and verified method of transfer of fiat money, using which both the sender and the recipient can be sure of the safety of their funds. ntegrating the possibility to receive investments by bank transfers, you get an additional method of receiving funds for your ICO project, thus increasing the number of your clients. Investors will have the possibility to transfer funds directly from their internet-banking to your account according to your bank details. The funds, transferred by investors, will be credited to your account in the shortest possible time.--></h1>
+						<h1>For investors, who do not have the possibility to take part in the ICO project with a payment card, we offer bank transfers  Bank transfer <s>(Wire-transfer) is a reliable and verified method of transfer of fiat money, using which both the sender and the recipient can be sure of the safety of their funds. ntegrating the possibility to receive investments by bank transfers, you get an additional method of receiving funds for your ICO project, thus increasing the number of your clients. Investors will have the possibility to transfer funds directly from their internet-banking to your account according to your bank details. The funds, transferred by investors, will be credited to your account in the shortest possible time. </s></h1>
 						<h3 read="bank">read more</h3>
 					  </td>
 					</tr>
@@ -199,11 +208,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="pic"></div>
-					
+						<div class="pic"></div>	
 				</div>
 			</div>
-			
 			<?php include 'assets/footer.php'; ?>
 
 		</div>

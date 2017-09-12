@@ -9,7 +9,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    width: 100%;
+    width: 100vw;
 	margin-top: 5vw;
 }
 
@@ -79,7 +79,7 @@ body{
 }
 .wrap div img{
 	width: 35%;
-    padding: vw;
+    
 }
 .wrap div h1{
 	font-size: 0.8vw;
@@ -172,6 +172,10 @@ body{
     padding: 1vw;
 	text-align:center;
     border-radius: 1vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 1;
 }
 .wrap2 div .img{
 	background-size: 34%;
@@ -221,6 +225,11 @@ body{
     text-align: center;
 	font-weight: 300;
     cursor: pointer;
+}
+.wrap2 s{
+    text-decoration: none;
+    display: none;
+
 }
 .blue{
     background-color: #00c6d8;
@@ -274,6 +283,7 @@ body{
     display: none;
     opacity: 1;
     height: 20vw;
+    position: relative;
 }
 .textaboutcard.visable {
     display: block;
@@ -308,7 +318,162 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 1;
+    position: relative;
 }
-
+.info1 {
+}
+    
 @media screen and (max-width: 900px){
+    #about{
+        height: 140vw;
+        left: 0;
+        top: 0;
+        width: 100vw;
+    }
+    .info1 {
+        width: 80vw;
+        margin: 6vw auto 0 auto;
+    }
+    .info2 {
+        width: 80vw;
+        margin: 28vw auto 0 auto;
+
+    }
+    .info2 h1, .info1 h1 {
+        line-height: initial;
+        font-size: 4.2vw
+    }
+    .info2 p, .info1 p {
+        font-size: 2.7vw;
+        line-height: initial;
+
+    }
+    #what_you_get {
+        height: 110vw;
+    }
+    #what_you_get h2 {
+        font-size: 4.2vw;
+    }
+    #what_you_get .wrap{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        width: 90vw;   
+        margin: auto;
+    }
+    .wrap div {
+        width: 30vw;
+        height: 30vw;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        -webkit-flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-justify-content: flex-end;
+    }
+    .wrap div h1 {
+        font-size: 2.7vw;
+        line-height: 3vw;
+    }
+    #what_you_get p{
+        font-size: 2.7vw;
+        line-height: initial;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-top: 10vw;
+    }
+    .wrap div img {
+        width: 15vw;
+    }
+
+    #second_wave {
+        height: 80vw;
+    }
+    #payment {
+        margin-top: 10vw;
+        height: 190vw;
+    }
+    #payment h2 {
+        font-size: 4.2vw;
+    }
+    .flex_button {
+        display: none;
+    }
+    .card{
+        flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        order: 0;
+    }
+    .card_photo {
+        width: 100%;
+        height: 30vw;
+    }
+    .card p {
+        font-size: 2.7vw;
+        line-height: initial;
+    }
+    .textaboutcard {
+        padding: 0;
+        width: 100%;
+        height: inherit;
+        order: 1;
+        margin-top: 5vw
+
+    }
+    .card h1 {
+        font-size: 4.2vw;
+        text-align: center;
+
+    }
+    .wrap2 div h1{
+        font-size: 2.7vw;
+        line-height: initial;
+    }
+    .blue h1{
+        color: rgb(159, 159, 159) !important;
+    }
+    .blue h4{
+        color: rgb(0, 198, 216)!important;
+    }
+    .wrap2 div {
+        display: none;
+        width: 80vw;
+        height: 85vw;
+        box-sizing: border-box;
+    }
+    .wrap2 div:nth-child(1){
+        display: block;
+    }
+    .blue {
+        background-color: #fff;
+    }
+    .bank.blue .img {
+        background-image: url(../img/7.png);
+    }
+    .western.blue .img {
+        background-image: url(../img/6.png);
+    }
+    .ewallets.blue .img {
+        background-image: url(../img/5.png);
+    }
+    .wrap2 table th {
+        height: 30vw;
+    }
+    .wrap2 div h4{
+        font-size: 4.2vw;
+        line-height: initial;
+    }
+    .wrap2 div h3 {
+        display: none;
+    }
+    .wrap2 s {
+        display: inline;
+    }
+    .display {
+        display: none !important;
+    }
+   
+
 }

@@ -10,8 +10,8 @@
     }
 
     catch(Exception $e) {
-        echo $e->getMessage() ;
-        echo "An error has occurred";
+        //echo $e->getMessage() ;
+        //echo "An error has occurred";
     }
 
 ?> 
