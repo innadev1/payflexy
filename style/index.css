@@ -5,13 +5,14 @@ body{
 }
 #about{
 	height: 48.8vw;
-    background-image: url(../img/background_1.png);
+    background-image: url(../img/about_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
 	margin-top: 5vw;
 }
+
 .info1{
 	width: 29vw;
     margin-top: 6vw;
@@ -35,8 +36,10 @@ body{
 }
 .info2{
 	width: 29vw;
-	margin-top: 6vw;
+    margin-top: 2vw;
     margin-left: 50vw;
+    z-index: 10;
+    position: relative;
 
 }
 .info2 h1{
@@ -108,7 +111,7 @@ body{
 }
 #second_wave{
 	height: 44.5vw;
-    background-image: url(../img/background_2.png);
+    /*background-image: url(../img/background_2.png);*/
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -118,6 +121,37 @@ body{
 	height: 50vw;
 	position: relative;
 	top: -15vw;
+    z-index: 2;
+}
+.display{
+    width: 58.4vw;
+    margin: auto;
+    margin-top: 3vw !important;
+    opacity: 0;
+    
+}
+.display .pic {
+    width: 40%;
+    height: 15vw;
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.display .text {
+    width: 60%;
+    
+} 
+.disptext {
+    display: none;
+    
+}
+.disptext p{
+    font-size:1vw;
+    color: rgb(159, 159, 159);
+
+}
+.disptext.visable {
+    display: block !important;
 }
 .wrap2{
 	display: -webkit-box;
@@ -128,7 +162,7 @@ body{
     justify-content: center;	
 }
 .wrap2 table th{
-	height: 7vw;
+	height: 8vw;
 }
 .wrap2 div{
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -137,9 +171,31 @@ body{
     margin: 1vw;
     padding: 1vw;
 	text-align:center;
+    border-radius: 1vw;
 }
-.wrap2 div img{
-	width: 35%;
+.wrap2 div .img{
+	background-size: 34%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.bank .img {
+    background-image: url(../img/7.png);
+}
+.bank.blue .img {
+    background-image: url(../img/7w.png);
+
+}
+.western .img {
+    background-image: url(../img/6.png);
+}
+.western.blue .img {
+    background-image: url(../img/6w.png);
+}
+.ewallets .img {
+    background-image: url(../img/5.png);
+}
+.ewallets.blue .img {
+    background-image: url(../img/5w.png);
 }
 .wrap2 div h1{
 	font-size: 0.8vw;
@@ -164,6 +220,14 @@ body{
     line-height: 1vw;
     text-align: center;
 	font-weight: 300;
+    cursor: pointer;
+}
+.blue{
+    background-color: #00c6d8;
+    color: #fff;
+}
+.blue h1, .blue h4{
+    color: #fff !important;
 }
 .flex_button {
     display: -webkit-box;
@@ -202,10 +266,23 @@ body{
 .card{
 	padding-left: 22vw;
     padding-right: 22vw;
+    display: none;
 }
 .textaboutcard{
 	width: 40vw;
     padding: 5vw;
+    display: none;
+    opacity: 1;
+    height: 20vw;
+}
+.textaboutcard.visable {
+    display: block;
+}
+
+.textaboutcard b {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #00c6d8;
 }
 .card h1{
 	font-size: 1.5vw;
@@ -222,9 +299,15 @@ body{
     line-height: 1.1vw;
     text-align: justify;
 }
-.card_photo img{
+.card_photo {
 	width: 20vw;
 	padding-top: 4vw;
+    min-height: 5vw;
+    background-image: url(../img/cards/card0.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
 
 @media screen and (max-width: 900px){

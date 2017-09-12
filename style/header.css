@@ -91,7 +91,11 @@ a{
     font-weight: 100;
     opacity: 0.7;
 }
-
+#c1,#c2,#c3,#c4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 @media screen and (max-width: 900px){
 
 

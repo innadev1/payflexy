@@ -41,12 +41,13 @@
 <link rel="stylesheet" type="text/css" href="style/footer.css">
 
 <div id="footer_banner">
+	<canvas id="c4"></canvas>
 	<div class="footer_text">
 		<h1>Our experianced specialists will be glad to answer your questions!</h1>
 		<h2>PLEASE, CONTACT US</h2>
 	</div>
 	
-	<div class="flex">
+	<div class="flex firstform">
 		<form action="index.php" method="post" name ="subForm" class="inputs" >
 			<div class="inputs">
 				<div><p>Email</p></div>
@@ -67,10 +68,39 @@
 			
 		
 		
-		<div class="button" style="display: none">
-			<button>or click here</button>
+		<div class="button" style="">
+			<button id="formToggle">or click here</button>
 			<p>and fill the form below and one of our managers<br> will contact you as soon as possible.</p>
 		</div>
+	</div>
+	<div class="secondform">
+		<form>
+			<div class="row flex">
+				<div>
+					<p>Name</p>
+					<input type="text" name="name">
+				</div>
+				<div>
+					<p>Website/project name</p>
+					<input type="text" name="project">
+				</div>
+			</div>
+			<div class="row flex">
+				<div>
+					<p>Phone number <s>in intertnational format</s></p>
+					<input type="text" name="number">
+				</div>
+				<div>
+					<p>Email</p>
+					<input type="text" name="email">
+				</div>
+			</div>
+			<p>Message</p>
+			<textarea></textarea>
+			<div class="submitin flex">
+			<input type="submit" name="form2">
+			</div>
+		</form>
 	</div>
 	
 </div>
@@ -87,6 +117,7 @@
 	<div class="footer_content" id="partners">
 		<img src="img/partners.png">
 	</div>
+
 
 	
 	
