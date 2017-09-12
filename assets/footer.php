@@ -1,6 +1,7 @@
 ﻿<?php
 	include ('assets/connect.php');
 	include ('assets/function.php');
+	include ('assets/lang.php');
 
     if(isset($_POST['SUBMIT']))
     {
@@ -11,7 +12,7 @@
 		$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 		
 		if(!preg_match($email_exp,$email)) {
-			echo "<script>alert('Please enter email!');</script>";
+			echo "<script>alert(<?php echo $language[$lang]['enter'] ?>);</script>";
 
 		}else{
 		
@@ -21,7 +22,7 @@
 
 			if($row['email']==$email) {
 
-				echo "<script>alert(' Your e-mails are already there!');</script>";
+				echo "<script>alert(<?php echo $language[$lang]['there'] ?>);</script>";
 			
 			}else{
 
@@ -31,7 +32,7 @@
 					'email' => $email,
 					'phone' => $phone,
 				]);
-				echo "<script>alert('Your email is registered!');</script>";			
+				echo "<script>alert(<?php echo $language[$lang]['reg'] ?>);</script>";			
 			}
 		}
 	}
@@ -43,19 +44,20 @@
 <div id="footer_banner">
 	<canvas id="c4"></canvas>
 	<div class="footer_text">
-		<h1>Our experianced specialists will be glad to answer your questions!</h1>
-		<h2>PLEASE, CONTACT US</h2>
+		<h1><?php echo $language[$lang]['Our_experienced'] ?></h1>
+
+		<h2><?php echo $language[$lang]['contact_us'] ?></h2>
 	</div>
 	
 	<div class="flex firstform">
 		<form action="index.php" method="post" name ="subForm" class="inputs" >
 			<div class="inputs">
-				<div><p>Email</p></div>
+				<div><p><?php echo $language[$lang]['email'] ?></p></div>
 				<input class="footer_input" type="text" name="email"></input>
 			</div>
 
 			<div class="inputs">
-				<div><p>Phone</p></div>
+				<div><p><?php echo $language[$lang]['phone'] ?></p></div>
 				<input class="footer_input" type="text" name="phone"></input>
 				<!-- <button class="subscribe"> -->
 			</div>
@@ -69,33 +71,33 @@
 		
 		
 		<div class="button" style="">
-			<button id="formToggle">or click here</button>
-			<p>and fill the form below and one of our managers<br> will contact you as soon as possible.</p>
+			<button id="formToggle"><?php echo $language[$lang]['click_here'] ?></button>
+			<p><?php echo $language[$lang]['fill1'] ?><br><?php echo $language[$lang]['fill2'] ?></p>
 		</div>
 	</div>
 	<div class="secondform">
 		<form>
 			<div class="row flex">
 				<div>
-					<p>Name</p>
+					<p><?php echo $language[$lang]['name'] ?></p>
 					<input type="text" name="name">
 				</div>
 				<div>
-					<p>Website/project name</p>
+					<p><?php echo $language[$lang]['proj.name'] ?></p>
 					<input type="text" name="project">
 				</div>
 			</div>
 			<div class="row flex">
 				<div>
-					<p>Phone number <s>in intertnational format</s></p>
+					<p><?php echo $language[$lang]['phone_number1'] ?><s><?php echo $language[$lang]['phone_number2'] ?></s></p>
 					<input type="text" name="number">
 				</div>
 				<div>
-					<p>Email</p>
+					<p><?php echo $language[$lang]['email'] ?></p>
 					<input type="text" name="email">
 				</div>
 			</div>
-			<p>Message</p>
+			<p><?php echo $language[$lang]['message'] ?></p>
 			<textarea></textarea>
 			<div class="submitin flex">
 			<input type="submit" name="form2">

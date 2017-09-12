@@ -7,16 +7,16 @@
 			<img src="img/logo.png">
 		</div>
 		<ul class="links_logo">
-			<li>about company</li>
-			<li>services</li>
-			<li>contacts</li>
+			<li><?php echo $language[$lang]['about company'] ?></li>
+			<li><?php echo $language[$lang]['services'] ?></li>
+			<li><?php echo $language[$lang]['contacts'] ?></li>
 		</ul>
 	</div>
 
 	<div id="links">
 		<ul>
-			<li>login</li>
-			<li>register</li>
+			<li><?php echo $language[$lang]['login'] ?></li>
+			<li><?php echo $language[$lang]['register'] ?></li>
 		</ul>
 	</div>
 
@@ -34,7 +34,7 @@
 <div id="banner">
 	<canvas id="c1"></canvas>
 	<div class="banner_text">
-		<h1>payflexy</h1>
-		<h2>team of experianced professionals in the<br>field of e-commerce</h2>
+		<h1><?php echo $language[$lang]['payflexy'] ?></h1>
+		<h2><?php echo $language[$lang]['team_experi'] ?><br><?php echo $language[$lang]['field_ecomerce'] ?></h2>
 	</div>
 </div><!--COMMENT-->
