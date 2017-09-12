@@ -2,7 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div id="header">
-
 	<div id="links_logo">
 		<div class="logo">
 			<img src="img/logo.png">
@@ -31,6 +30,7 @@
 	
 </div>
 <div id="banner">
+	<canvas id="c1"></canvas>
 	<div class="banner_text">
 		<h1>payflexy</h1>
 		<h2>team of experianced professionals in the<br>field of e-commerce</h2>
