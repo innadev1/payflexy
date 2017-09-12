@@ -24,9 +24,9 @@
 		<ul>
 
 		
-			<li>EN</li>
+			<li><a href="index.php?lang=en">EN</a></li>
 			<li>|</li>
-			<li>RU</li>
+			<li><a href="index.php?lang=ru">RU</a></li>
 		</ul>
 	</div>
 	
