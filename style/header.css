@@ -154,6 +154,18 @@ a{
     background-color: #00c6d8;
     border-radius: 2vw;
 }
+.exit {
+    width: 7vw;
+    height: 7vw;
+    background-image: url(../img/exit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 1vw;
+    right: calc(1vw + 10px);
+    z-index: 10;
+}
 .nav {
     display: none;
 
@@ -166,9 +178,45 @@ a{
     background-color: rgba(0,198,216, 0.9);
 
 }
+.links_logo{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#links_logo {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    height: 100vh;
+}
 #links_logo li {
     display: block;
-    font-size: 5vw;
+    font-size: 7vw;
+    line-height: 10vw;
     color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+#links {
+    top: 80%;
+     font-size: 5vw;
+    color: #fff;
+    right: 10%;
+}
+#lang {
+    font-size: 5vw;
+    top: 80%;
+    left: 10%;
+    color: #fff;
+    display: flex;
+    display: -webkit-flex;
+
 }
 }

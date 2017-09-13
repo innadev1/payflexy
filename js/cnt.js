@@ -553,6 +553,15 @@ $(function(){
 
 	$('.mobile').click(function(){
 		$('.nav').css('display','block')
+		$('html').css('overflow','hidden')
+	})
+	$('.exit').click(function(){
+		$('.nav').css('display','none')
+		$('html').css('overflow','scroll')
+	})
+
+	$('.links_logo li').click(function(){
+		alert('GOOOOO')
 	})
 
 
