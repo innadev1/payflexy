@@ -440,7 +440,7 @@ body{
     .wrap2 div {
         display: none;
         width: 80vw;
-        height: 85vw;
+        height: 90vw;
         box-sizing: border-box;
     }
     .wrap2 div:nth-child(1){
@@ -474,6 +474,6 @@ body{
     .display {
         display: none !important;
     }
-   
+
 
 }

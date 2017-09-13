@@ -551,5 +551,9 @@ $(function(){
 		panFun2(dir)
 	})
 
+	$('.mobile').click(function(){
+		$('.nav').css('display','block')
+	})
+
 
 })
