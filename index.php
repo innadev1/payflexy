@@ -174,7 +174,6 @@
 							</div>
 						</div>
 						<div class="pic"></div>
-					
 				</div>
 			</div>
 			

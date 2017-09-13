@@ -36,6 +36,143 @@
 			}
 		}
 	}
+
+	
+	$error_message_n = "";
+	$error_message_n2 = "";
+	$error_message_n3 = "";
+	$error_message_p = "";
+	$error_message_p2 = "";
+	$error_message_p3 = "";
+	$error_message_pho = "";
+	$error_message_pho2 = "";
+	$error_message_em = "";
+	$error_message_m = "";
+	$error_message_m2 = "";
+	$mailSuccess = false;
+
+
+	if(isset($_POST['submit'])) {
+		$to = 'my.worktest94@gmail.com';
+
+		$name = $_POST["name"];
+		$project = $_POST["project"];
+		$number = $_POST["number"];
+		$email = $_POST["email"];
+		$message = $_POST["message"];
+
+
+		$error_message_n = "";
+		$error_message_n2 = "";
+		$error_message_n3 = "";
+		$error_message_p = "";
+		$error_message_p2 = "";
+		$error_message_p3 = "";
+		$error_message_pho = "";
+		$error_message_pho2 = "";
+		$error_message_em = "";
+		$error_message_m = "";
+		$error_message_m2 = "";
+
+		$errors = ['name'=>0,'project'=>0,'number'=>0, 'email'=>0, 'name'=>0, 'message'=>0];
+
+// --------------------------------------------->>>
+		// name
+		if(empty($name)) {
+			$error_message_n .= '<p style = "color: red;">Please enter place.</p>';
+			$errors['name'] = 1;
+		}
+
+		$email_exp_a = "/[^A-Za-z]/";
+		
+		if(preg_match($email_exp_a,$_POST["name"])) {
+			$error_message_n2 .= '<p style = "color: red;">only alphabet!</p>';
+			$errors['name'] = 1;
+		}
+
+		if(strlen($place) < 2){
+			$error_message_n3 .= '<p style = "color: red;">Name of place is too short.</p>';
+			$errors['name'] = 1;
+			
+		}
+
+// --------------------------------------------->>>
+
+		// project
+		if(empty($project)) {
+			$error_message_p .= '<p style = "color: red;">Please enter place.</p>';
+			$errors['project'] = 1;
+		}
+
+		if(strlen($project) > 20){
+			$error_message_p2 .= '<p style = "color: red;">Name of place is too long.</p>';
+			$errors['project'] = 1;
+			
+		}
+
+		if(strlen($project) < 2){
+			$error_message_p3 .= '<p style = "color: red;">Name of place is too short.</p>';
+			$errors['project'] = 1;
+			
+		}
+
+// --------------------------------------------->>> 
+
+		// Phone
+
+		if(strlen($number) < 7) {
+        	$error_message_pho .= '<p style = "color: red;">phonenumber too short.</p>';
+			$errors['number'] = 1;
+		}
+
+		$email_exp_n = "/[^0-9]/";
+		
+		if(preg_match($email_exp_n,$_POST["number"])) {
+			$error_message_pho2 .= '<p style = "color: red;">only numbers!</p>';
+			$errors['number'] = 1;
+		}
+
+// --------------------------------------------->>>>
+
+		// EMAIL 
+		$error_message = "";
+    	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+	
+    	if(!preg_match($email_exp,$email)) {
+        	$error_message_em .= '<p style = "color: red;">Please enter email!</p>';
+			$errors['email'] = 1;
+		}
+		
+// --------------------------------------------->>>
+
+		// messege
+		if(empty($message)) {
+			$error_message_m .= '<p style = "color: red;">Please enter text.</p>';
+			$errors['message'] = 1;
+		}
+
+		if(strlen($message) > 1000) {
+        	$error_message_m2 .= '<p style = "color: red;">Message too long.</p>';
+			$errors['message'] = 1;
+		}
+
+
+		if( empty($error_message_n) && empty($error_message_n2) && empty($error_message_n3) && empty($error_message_p) && empty($error_message_p2)
+			&& empty($error_message_p3) && empty($error_message_pho) && empty($error_message_pho2) && empty($error_message_em) && empty($error_message_m)
+			&& empty($error_message_m2)) 
+		{
+			$subject = 'the subject';
+			$message = "Направление:" . " " . $name . "\r\n" . "С:" . " " . $number . "\r\n" . "Do:" . " " . $email . "\r\n" . "Сколько людей:" . " " . $message;
+			'Reply-To:' . " " . $email . "\r\n" .
+			'X-Mailer: PHP/' . phpversion();
+
+			if(mail($to, $subject, $message, $headers)){
+				
+				$mailSuccess = true;
+
+			}
+		}
+	}
 	
 ?>
 
@@ -76,31 +213,36 @@
 		</div>
 	</div>
 	<div class="secondform">
-		<form>
+		<form action="index.php" method="post" name ="mailform" class="inputs" >
 			<div class="row flex">
 				<div>
 					<p><?php echo $language[$lang]['name'] ?></p>
 					<input type="text" name="name">
 				</div>
+
 				<div>
 					<p><?php echo $language[$lang]['proj.name'] ?></p>
 					<input type="text" name="project">
 				</div>
 			</div>
+
 			<div class="row flex">
 				<div>
 					<p><?php echo $language[$lang]['phone_number1'] ?><s><?php echo $language[$lang]['phone_number2'] ?></s></p>
 					<input type="text" name="number">
 				</div>
+
 				<div>
 					<p><?php echo $language[$lang]['email'] ?></p>
 					<input type="text" name="email">
 				</div>
 			</div>
+
 			<p><?php echo $language[$lang]['message'] ?></p>
 			<textarea></textarea>
+			
 			<div class="submitin flex">
-			<input type="submit" name="form2">
+				<input class="footer_button" type="submit" name="SUBMIT" value="SUBMIT2"></input>
 			</div>
 		</form>
 	</div>
