@@ -180,7 +180,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="pic"></div>	
+
+						<div class="pic"></div>
+
 				</div>
 			</div>
 			<?php include 'assets/footer.php'; ?>
