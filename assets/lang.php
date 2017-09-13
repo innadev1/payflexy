@@ -102,13 +102,39 @@
     $language['en']['message'] = 'Message';
 
 
+    $language['en']['sub'] = 'submit';
+    $language['en']['sub_two'] = 'send';
+    $language['en']['back'] = 'back';
+
+    $language['en']['error_message_n'] = 'Please enter name';
+    $language['en']['error_message_n2'] = 'Only alphabet!';
+    $language['en']['error_message_n3'] = 'Name is too short.';
+    $language['en']['error_message_p'] = 'Please enter project name';
+    $language['en']['error_message_p2'] = 'Name of porject is too long.';
+    $language['en']['error_message_p3'] = 'Name of project is too short.';
+    $language['en']['error_message_pho'] = 'Phonenumber too short.';
+    $language['en']['error_message_pho2'] = 'Only numbers!';
+    $language['en']['proj.error_message_em'] = 'Please enter email!';
+    $language['en']['error_message_m'] = 'Please enter text.';
+    $language['en']['error_message_m2'] = 'Message too long.';
+
+    $language['en']['adressus'] = '© ООО «Бонусный клуб», 105264, <br> Moscow, 9 Parkovaja street <br> House 39, office 210';
+    $language['en']['phoneus'] = '+7 (499) 350-42-14 <br> Support service from 10:00 till 19:00 Moscow time';
+
+    $language['en']['name_em'] = 'name:';
+    $language['en']['phone_em'] = 'Phone:';
+    $language['en']['email_em'] = 'Email:';
+    $language['en']['message_em'] = 'Message:';
+    $language['en']['repl_em'] = 'Reply-To:';
+
+    $language['en']['sendsende'] = 'Your email was sent';
 
 // ----------------------------------------------------------------------------------->
 
     // RU
         // HEADER
     $language['ru']['about company'] = 'о компании';
-    $language['ru']['services'] = 'Сервисы';
+    $language['ru']['services'] = 'cервисы';
     $language['ru']['contacts'] = 'контакты';
 
     $language['ru']['login'] = 'войти';
@@ -118,7 +144,7 @@
     $language['ru']['field_ecomerce'] = 'области электронной коммерции';
 
     $language['ru']['payflexy'] = 'payflexy';
-    $language['ru']['team_of_exp1'] = 'Мы являемся командой';
+    $language['ru']['team_of_exp1'] = 'мы являемся командой';
     $language['ru']['team_of_exp2'] = 'профессионалов в области';
     $language['ru']['team_of_exp3'] = 'электронной коммерции';
 
@@ -163,8 +189,10 @@
     $language['ru']['e-wallets_t'] = 'Электронные кошельки С развитием электронной коммерции, многие предпочитают электронные кошельки в качестве решения для расчетов онлайн как в личных, так и в целях своей предпринимательской деятельности, отказавшись от услуг банков, так как работа с электронными кошельками сокращает время и затраты на перечисления средств. Мы предлагаем интеграцию системы приема платежей посредством электронных кошельков для Вашего ICO проекта. Вы сможете получать платежи от клиентов самых известных электронных кошельков, как, например, PayPal, Skrill, Neteller, Qiwi и др. Такие перечисления занимают минимальное количество времени и средств – инвесторы смогут осуществлять переводы средств прямо из системы своего э-кошелька на Ваш счет по указанным реквизитам.';
     $language['ru']['western_transfers'] = 'Переводы Western Union';
     $language['ru']['western_transfers_t'] = 'PAYFLEXY предлагает уникальную возможность приема инвестиций для Вашего ICO проекта с помощью известной платежной системы Western Union. Это просто, удобно и доступно по всему миру – как альтернатива банковским счетам, картам и электронным кошелькам. С помощью системы Western Union Вы сможете получать инвестиции в различных популярных валютах. Переводы Western Union отличаются высоким уровнем безопасности – Вы и Ваш клиент можете быть уверены в сохранности своих средств. ';
-    $language['ru']['b_tranfers'] = 'tulkojums';
-    $language['ru']['b_tranfers_t'] = 'tulkojums';
+    $language['ru']['b_tranfers'] = 'услуги';
+    $language['ru']['b_tranfers_t'] = 'Для инвесторов, не имеющих возможности принять участие в ICO проекте с помощью пополнения платежной карты, мы предлагаем услугу банковского перечисления. 
+    Банковское перечисление (Wire-transfer) – надежный и проверенный способ перевода фиатных средств, при котором и отправитель, и получатель могут быть уверены в сохранности своих средств. 
+    Подключая возможность получения инвестиций банковскими перечислениями, Вы получаете дополнительный способ сбора средств для Вашего ICO проекта, таким образом расширяя круг своих клиентов. Инвесторы будут иметь возможность перевода средств прямо из системы своего интернет-банка на Ваш счет по указанным реквизитам. Средства, перечисляемые инвесторами, будут зачислены на Ваш банковский счет в кратчайшие сроки.';
 
 
     // FOOTER 
@@ -185,6 +213,35 @@
     $language['ru']['phone_number2'] = 'в международном формате';
     $language['ru']['message'] = 'Сообщение';
     $language['ru']['ОТПРАВИТЬ'] = 'ОТПРАВИТЬ';
+
+
+    $language['ru']['adressus'] = '© ООО «Бонусный клуб», 105264, <br> г. Москва, улица 9-я Парковая, <br> дом 39, офис 210';
+    $language['ru']['phoneus'] = '+7 (499) 350-42-14 <br> Служба поддержки с 10:00 до 19:00 МСК';
+
+
+    $language['ru']['error_message_n'] = 'Пожалуйста, введите имя';
+    $language['ru']['error_message_n2'] = 'Только буквы!';
+    $language['ru']['error_message_n3'] = 'Имя слишком короткое.';
+    $language['ru']['error_message_p'] = 'Пожалуйста, введите имя проекта';
+    $language['ru']['error_message_p2'] = 'Имя проекта слишком длинное.';
+    $language['ru']['error_message_p3'] = 'Имя проекта слишком короткое.';
+    $language['ru']['error_message_pho'] = 'Номер телефона слишком короткий.';
+    $language['ru']['error_message_pho2'] = 'Только цифры!';
+    $language['ru']['proj.error_message_em'] = 'Пожалуйста, введите электронную почту!';
+    $language['ru']['error_message_m'] = 'Пожалуйста, введите текст.';
+    $language['ru']['error_message_m2'] = 'Сообщение слишком длинное.';
+
+    $language['ru']['sub'] = 'подписываться';
+    $language['ru']['sub_two'] = 'oтправить';
+    $language['ru']['back'] = 'назад';
+
+    $language['ru']['name_em'] = 'Имя:';
+    $language['ru']['phone_em'] = 'Телефон:';
+    $language['ru']['email_em'] = 'Эл. адрес:';
+    $language['ru']['message_em'] = 'Сообщение:';
+    $language['ru']['repl_em'] = 'Ответить на:';
+
+    $language['ru']['sendsende'] = 'Ваше письмо отправлено';
 
     
   
