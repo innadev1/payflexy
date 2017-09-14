@@ -188,6 +188,7 @@ s {
     top: 0;
     left: 0;
     opacity: 1;
+    margin-top: 4vw;
 }
 .wrap2 .content .img{
 	background-size: 34%;
@@ -292,7 +293,7 @@ s {
 }
 .textaboutcard{
 	width: 40vw;
-    padding: 5vw;
+    padding: 2vw;
     display: none;
     opacity: 1;
     height: 20vw;

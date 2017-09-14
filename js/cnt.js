@@ -451,7 +451,7 @@ $(function(){
 		if (formClick) {
 			if (!formext) {
 				formClick = false
-				text = lang=='en'? 'back' : 'po ru'
+				text = lang=='en'? 'back' : 'назад'
 				$(this).html(text)
 				$(this).parent().addClass('back')
 				$('.firstform form, .firstform .button p ').css('display','none')

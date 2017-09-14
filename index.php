@@ -34,11 +34,12 @@
 
 				<?php if($_GET['f']=='e'){ ?>
 					formext = true
+					
 						$('.firstform form, .firstform .button p ').css('display','none')
 						$('.secondform').css({'display':'block','opacity':'1'})
 
-						text = lang=='en'? 'back' : 'po ru'
-						$('#formToggle').html(text)
+						text = lang=='en'? 'back' : 'назад'
+						$('#formToggle').html(text).parent().addClass('back')
 					
 				<?php }?>
 				
@@ -183,7 +184,7 @@
 						</tr>
 						</table>
 					</div>
-					<div class="content bank blue">
+					<div class="content bank">
 					<table>
 					<tr>
 						<th class="img">
