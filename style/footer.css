@@ -12,7 +12,7 @@ margin: 18vw 0 0 0;
 #footer_banner h1{
 	text-align: center;
     font-size: 2.2vw;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255);
     margin: 0;
     margin-bottom: 3vw;
@@ -22,7 +22,7 @@ margin: 18vw 0 0 0;
 #footer_banner h2{
 	text-align: center;
 	font-size: 1.5vw;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: rgb(255, 255, 255);
 	margin: 0;
     font-weight: 100;
@@ -48,7 +48,7 @@ margin: 18vw 0 0 0;
 .inputs p,.secondform p{
 	margin: 0;
 	font-size: 1vw;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: rgb(132, 131, 131);
 	margin-bottom: 0.5vw;
     margin-top: 0.5vw;
@@ -92,8 +92,8 @@ margin: 18vw 0 0 0;
 }
 .button p{
 	margin: 0;
-	font-size: 0.8vw;
-	font-family: "Roboto", sans-serif;
+	font-size: 1vw;
+	font-family: 'Poppins', sans-serif;
 	color: rgb(132, 131, 131);
 	margin-bottom: 0.5vw;
     margin-top: 0.5vw;
@@ -102,7 +102,7 @@ margin: 18vw 0 0 0;
 .footer_content p{
 	margin: 0;
     font-size: 0.8vw;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(132, 131, 131);
     margin-bottom: 0.5vw;
     margin-top: 0.5vw;
@@ -196,8 +196,11 @@ margin: 18vw 0 0 0;
 	}
 	.secondform textarea, .secondform input, .inputs input{
 		width: 50vw;
-		height: 7vw;
-		border-radius: 4vw;
+		max-width: 400px;
+		height: 40px;
+		border-radius: 20px;
+		min-width: 250px;
+
 
 	}
 	.inputs {
@@ -210,25 +213,30 @@ margin: 18vw 0 0 0;
 	}
 	.footer_button {
 		width: 30vw !important;
-		font-size: 2.7vw;
+		font-size: 15px;
 		/*margin: auto;*/
 	}
 	.inputs p, .secondform p {
-		font-size: 2.7vw;
+		font-size: 15px;
 	}
 	.button {
 		margin: 0;
 		padding: 0;
 	}
 	.button button {
+		border-radius: 20px;
 		width: 30vw !important;
-		font-size: 2.7vw;
-		height: 7vw;
+		font-size: 15px;
+		max-width: 400px;
+		height: 40px;
 	}
 	#footer {
-		margin-top: 88vw;
+		margin-top: 600px;
 		flex-direction: column;
 		-webkit-flex-direction: column;
+	}
+	.submitin {
+		width: initial;
 	}
 	.secondform {
 		width: 51%;
@@ -240,11 +248,11 @@ margin: 18vw 0 0 0;
 		-webkit-align-items:center;
 	}
 	.button p {
-		font-size: 2.7vw;
+		font-size: 15px;
 	}
 	.secondform input[type=submit] {
 		width: 30vw;
-		font-size: 2.7vw;
+		font-size: 15px;
 	}
 	.secondform textarea {
 		height: 14vw !important;
@@ -270,7 +278,7 @@ margin: 18vw 0 0 0;
     	-webkit-justify-content: center;
     }
     .footer_content p {
-    	font-size: 2.7vw;
+    	font-size: 15px;
     	line-height: initial;
     }
     .footer_content .socilas {
