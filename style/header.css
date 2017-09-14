@@ -9,6 +9,7 @@ a{
 }
 #header{
 	height: 5.5vw;
+    z-index: 100;
 }
 #links_logo{
 	
@@ -16,7 +17,7 @@ a{
 .links_logo{
 	position: absolute;
     font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     top: 1.5vw;
     left: 17vw;
     color: rgb(157, 157, 157);
@@ -38,7 +39,7 @@ a{
 #links{
 	position: absolute;
     font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
     top: 1.5vw;
     right: 11vw;
@@ -53,7 +54,7 @@ a{
 #lang{
 	position: absolute;
     font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     top: 1.5vw;
     right: 3vw;
     color: rgb(157, 157, 157);
@@ -124,7 +125,7 @@ a{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 100;
     width: 100vw;
     background-color: #fff;
 }
