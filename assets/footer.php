@@ -151,7 +151,7 @@
 			&& empty($error_message_m2)) 
 		{
 			$subject = 'the subject';
-	$message_two = $language[$lang]['name_em'] . " " . $name . "\r\n" . $language[$lang]['phone_em'] . " " . $number . "\r\n" . $language[$lang]['email_em'] . " " . $email . "\r\n" . $language[$lang]['phone_em'] . " " . $message;
+	$message_two = $language[$lang]['name_em'] . " " . $name . "\r\n" . $language[$lang]['pro_em'] . " " . $project . "\r\n" . $language[$lang]['phone_em'] . " " . $number . "\r\n" . $language[$lang]['email_em'] . " " . $email . "\r\n" . $language[$lang]['message_em'] . " " . $message;
 	$headers = $language[$lang]['repl_em'] . " " . $email . "\r\n";
 	if(mail($to, $subject, $message_two, $headers)){
 				
@@ -178,7 +178,7 @@
 	</div>
 	
 	<div class="flex firstform">
-		<form action="index.php?f=e<?php if(isset($lang)){ echo '&lang='.$lang ; } ?>" method="post" name ="subForm" class="inputs" >
+		<form action="index.php?f=s<?php if(isset($lang)){ echo '&lang='.$lang ; } ?>" method="post" name ="subForm" class="inputs" >
 			<div class="inputs">
 				<div><p><?php echo $language[$lang]['email'] ?></p></div>
 				<input class="footer_input" type="text" name="email" value = "<?php if(isset($_POST['email']) && $errors['email'] == 0){ echo $_POST['email']; } ?>"></input>
@@ -255,9 +255,6 @@
 
 <div id="footer" class="flex">
 	<div class="footer_content"><p><?php echo $language[$lang]['adressus'] ?></p></div>
-	
-	<div class="footer_content"><p><?php echo $language[$lang]['phoneus'] ?>
-	</p></div>
 	
 	<div class="footer_content" id="partners">
 		<img src="img/partners.png">
