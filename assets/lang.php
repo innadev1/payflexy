@@ -124,7 +124,8 @@
     $language['en']['error_message_m2'] = 'Message too long.';
 
     $language['en']['adressus'] = 'PayFlexy <br> +371 29898289<br> info@payflexy.com';
-    $language['en']['phoneus'] = '+7 (499) 350-42-14 <br> Support service from 10:00 till 19:00 Moscow time';
+
+
 
     $language['en']['name_em'] = 'name:';
     $language['en']['phone_em'] = 'Phone:';
@@ -132,9 +133,10 @@
     $language['en']['message_em'] = 'Message:';
     $language['en']['repl_em'] = 'Reply-To:';
 
+    $language['en']['pro_em'] = 'Website/project name:';
+
     $language['en']['sendsende'] = 'Your email was sent';
 
-// ----------------------------------------------------------------------------------->
 
     // RU
         // HEADER
@@ -168,11 +170,13 @@
 
 
     $language['ru']['c_pay'] = 'Карточные платежи';
+    
+
     $language['ru']['carts'] = 'VISA и MasterCard ';
     $language['ru']['carts_t'] = 'VISA и MasterCard – самые известные и популярные системы платежных карт. Подключая платежную страницу для приема платежей по картам Visa и MasterCard, Вы получаете возможность принимать платежи в фиатной валюте практически со всего мира прямо на Ваш счет. При подключении процессинга платежных карт важно учитывать, что данные системы имеют собственные требования и условия для приема платежей, контролируют транзакции и выполнение установленных международных правил относительно финансовых операций.';
     
-     $language['en']['master'] = 'MasterCard Money send и VISA Direct';
-    $language['en']['master_t'] = 'Payment of services systems Mastercard and VISA, which allows cardholders to make money transfers between themselves. To perform the transfer, you only need to know the card number of the recipient.';
+     $language['ru']['master'] = 'MasterCard Money send и VISA Direct';
+    $language['ru']['master_t'] = 'MasterCard Money send и VISA Direct сервисы платежных систем Mastercard и VISA, позволяющий держателям карт осуществлять денежные переводы между собой.Чтобы выполнить перевод, необходимо знать только номер карты получателя.';
 
     $language['ru']['multi'] = 'Мультивалютный процессинг ';
     $language['ru']['multi_t'] = 'Мультивалютный процессинг позволяет принимать платежи онлайн со всего мира, в удобной валюте как для Вас, так и для клиента. Для клиента - это очень удобно, так как он может производить оплату с Вашего сайта в своей национальной валюте и не думать о конвертации. Это выгодно для Вас – ведь у владельца нашего мультивалютного платежного решения появляется возможность проводить валютные транзакции со своими клиентами, партнерами и поставщиками сразу в нескольких валютах.';
@@ -215,7 +219,7 @@
     $language['ru']['click_here'] = 'или нажмите здесь';
     $language['ru']['fill1'] = 'и заполните форму ниже и один из наших менеджеров';
     $language['ru']['fill2'] = 'свяжется с вами как можно скорее.';
-    $language['ru']['name'] = 'имя';
+    $language['ru']['name'] = 'Имя';
     $language['ru']['proj.name'] = 'Название сайта / проекта';
     $language['ru']['phone_number1'] = 'Номер телефона';
     $language['ru']['phone_number2'] = 'в международном формате';
@@ -224,7 +228,6 @@
 
 
     $language['ru']['adressus'] = 'PayFlexy <br> +371 29898289<br> info@payflexy.com';
-    $language['ru']['phoneus'] = '+7 (499) 350-42-14 <br> Служба поддержки с 10:00 до 19:00 МСК';
 
 
     $language['ru']['error_message_n'] = 'Пожалуйста, введите имя';
@@ -246,6 +249,7 @@
     $language['ru']['name_em'] = 'Имя:';
     $language['ru']['phone_em'] = 'Телефон:';
     $language['ru']['email_em'] = 'Эл. адрес:';
+    $language['ru']['pro_em'] = 'Название сайта / проекта:';
     $language['ru']['message_em'] = 'Сообщение:';
     $language['ru']['repl_em'] = 'Ответить на:';
 
