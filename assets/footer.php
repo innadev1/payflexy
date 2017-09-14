@@ -2,21 +2,37 @@
 	include ('assets/connect.php');
 	include ('assets/function.php');
 	include ('assets/lang.php');
-    if(isset($_POST['SUBMIT']))
+
+	$error_message_first_email = "";
+	$error_message_first_email2 = "";
+
+
+	if(isset($_POST['SUBMIT']))
     {
+
+		$error_message_first_email = "";
+		$error_message_first_email2 = "";
+
+		$errors = ['email'=>0,'phone'=>0];
+
 		$email = $_POST['email'];
 		$phone = $_POST['phone'];
+
 		$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+		$errors = ['email'=>0,'phone'=>0];
 		
 		if(!preg_match($email_exp,$email)) {
-			echo "<script>alert( '".$language[$lang]['enter']."');</script>";
+			$error_message_first_email .= '<p style = "color: red;"> '.$language[$lang]['enter'].'</p>';
+			$errors['email'] = 1;
 		}else{
 		
 			$row = getDataFromDatabase("SELECT email FROM emails WHERE email=:email", [ 
 				'email' => $email,
 			]);
 			if($row['email']==$email) {
-				echo "<script>alert(<?php echo $language[$lang]['there'] ?>);</script>";
+				$error_message_first_email2 .= '<p style = "color: red;"> '.$language[$lang]['there'].'</p>';
+				$errors['email'] = 1;
 			
 			}else{
 				$sql = "INSERT INTO emails (email, phone) VALUES(:email, :phone)";
@@ -25,7 +41,8 @@
 					'email' => $email,
 					'phone' => $phone,
 				]);
-				echo "<script>alert(<?php echo $language[$lang]['reg'] ?>);</script>";			
+				echo "<script>alert( '".$language[$lang]['reg']."');</script>";	
+				$errors['email'] = 1;
 			}
 		}
 	}
@@ -68,46 +85,44 @@
 		$errors = ['name'=>0,'project'=>0,'number'=>0, 'email'=>0, 'message'=>0];
 // --------------------------------------------->>>
 		// name
+		$email_exp_a = "/[^A-Za-z]/";
+
 		if(empty($name)) {
 			$error_message_n .= '<p style = "color: red;"> '.$language[$lang]['error_message_n'].'</p>';
 			$errors['name'] = 1;
-		}
-		$email_exp_a = "/[^A-Za-z]/";
-		
-		if(preg_match($email_exp_a,$_POST['name'])) {
+
+		}else if(preg_match($email_exp_a,$_POST['name'])) {
 			$error_message_n2 .= '<p style = "color: red;">'.$language[$lang]['error_message_n2'].'</p>';
 			$errors['name'] = 1;
-		}
-		if(strlen($name) < 2){
+
+		}else if(strlen($name) < 2){
 			$error_message_n3 .= '<p style = "color: red;">'.$language[$lang]['error_message_n3'].'</p>';
 			$errors['name'] = 1;
-			
+				
 		}
 // --------------------------------------------->>>
 		// project
 		if(empty($project)) {
 			$error_message_p .= '<p style = "color: red;">'.$language[$lang]['error_message_p'].'</p>';
 			$errors['project'] = 1;
-		}
-		if(strlen($project) > 20){
+			 
+		}else if(strlen($project) > 20){
 			$error_message_p2 .= '<p style = "color: red;">'.$language[$lang]['error_message_p2'].'</p>';
 			$errors['project'] = 1;
 			
-		}
-		if(strlen($project) < 2){
+		}else if(strlen($project) < 2){
 			$error_message_p3 .= '<p style = "color: red;">'.$language[$lang]['error_message_p3'].'</p>';
 			$errors['project'] = 1;
-			
 		}
 // --------------------------------------------->>> 
 		// Phone
+		$email_exp_n = "/[^0-9]/";
+
 		if(strlen($number) < 7) {
         	$error_message_pho .= '<p style = "color: red;">'.$language[$lang]['error_message_pho'].'</p>';
 			$errors['number'] = 1;
-		}
-		$email_exp_n = "/[^0-9]/";
-		
-		if(preg_match($email_exp_n,$_POST["number"])) {
+
+		}else if(preg_match($email_exp_n,$_POST["number"])) {
 			$error_message_pho2 .= '<p style = "color: red;">'.$language[$lang]['error_message_pho2'].'</p>';
 			$errors['number'] = 1;
 		}
@@ -126,12 +141,12 @@
 		if(empty($message)) {
 			$error_message_m .= '<p style = "color: red;">'.$language[$lang]['error_message_m'].'</p>';
 			$errors['message'] = 1;
-		}
-		if(strlen($message) > 1000) {
+
+		}else if(strlen($message) > 1000) {
         	$error_message_m2 .= '<p style = "color: red;">'.$language[$lang]['error_message_m2'].'</p>';
 			$errors['message'] = 1;
-		}
-		if(empty($error_message_n2) && empty($error_message_n3) && empty($error_message_p) && empty($error_message_p2)
+			
+		}else if(empty($error_message_n2) && empty($error_message_n3) && empty($error_message_p) && empty($error_message_p2)
 			&& empty($error_message_p3) && empty($error_message_pho) && empty($error_message_pho2) && empty($error_message_em) && empty($error_message_m)
 			&& empty($error_message_m2)) 
 		{
@@ -163,10 +178,12 @@
 	</div>
 	
 	<div class="flex firstform">
-		<form action="index.php" method="post" name ="subForm" class="inputs" >
+		<form action="index.php?f=e<?php if(isset($lang)){ echo '&lang='.$lang ; } ?>" method="post" name ="subForm" class="inputs" >
 			<div class="inputs">
 				<div><p><?php echo $language[$lang]['email'] ?></p></div>
-				<input class="footer_input" type="text" name="email"></input>
+				<input class="footer_input" type="text" name="email" value = "<?php if(isset($_POST['email']) && $errors['email'] == 0){ echo $_POST['email']; } ?>"></input>
+				<?php echo ($error_message_first_email); ?>
+				<?php echo ($error_message_first_email2); ?>
 			</div>
 
 			<div class="inputs">

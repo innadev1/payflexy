@@ -18,6 +18,30 @@
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/hammer.js"></script>		
 		<script type="text/javascript" src="js/cnt.js"></script>		
+		<script>
+			var lang = <?php echo $lang ?>
+				alert(lang)
+		</script>
+		<?php if(isset($_GET['f'])){ ?>
+			<script>
+				var formext = false
+				
+
+			$(function(){
+			
+				offset = $('#footer_banner').offset()
+				$('body, html').scrollTop(offset.top+200)
+
+				<?php if($_GET['f']=='e'){ ?>
+					formext = true
+						$('.firstform form, .firstform .button p ').css('display','none')
+						$('.secondform').css({'display':'block','opacity':'1'})
+					
+				<? }?>
+				
+			})
+			</script>
+		<?php	}?>
 
     </head>
 
