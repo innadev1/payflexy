@@ -40,7 +40,9 @@
 
 						text = lang=='en'? 'back' : 'назад'
 						$('#formToggle').html(text).parent().addClass('back')
+
 						$('.firstform').css('margin-top','10vw')
+
 
 					
 				<?php }?>
