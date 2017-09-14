@@ -25,14 +25,14 @@ s {
 	font-size: 2.1vw;
     font-weight: 300;
     line-height: 2.4vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(0, 198, 216);
     text-align: left;
 	text-shadow: 0px 3px 22.4px rgba(188, 188, 188, 0.05);
 }
 .info1 p{
 	font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(159, 159, 159);
     line-height: 1.3vw;
 	text-align: left;
@@ -50,14 +50,14 @@ s {
 	font-size: 2.2vw;
     font-weight: 500;
     line-height: 2.4vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     text-align: right;
 	text-shadow: 0px 3px 22.4px rgba(188, 188, 188, 0.05);
 }
 .info2 p{
 	font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     line-height: 1.3vw;
 	text-align: right;
@@ -87,7 +87,7 @@ s {
 }
 .wrap div h1{
 	font-size: 0.8vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(159, 159, 159);
     line-height: 1vw;
     text-align: center;
@@ -97,7 +97,7 @@ s {
 	font-size: 2.1vw;
     font-weight: 300;
     line-height: 2.4vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(0, 198, 216);
     text-align: center;
     text-shadow: 0px 3px 22.4px rgba(188, 188, 188, 0.05);
@@ -105,7 +105,7 @@ s {
 }
 #what_you_get p{
 	font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(159, 159, 159);
     line-height: 1.3vw;
     text-align: center;
@@ -152,7 +152,7 @@ s {
 }
 .disptext p{
     font-size:1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
     color: rgb(159, 159, 159);
     line-height: 1.3vw;
@@ -214,7 +214,7 @@ s {
 }
 .wrap2 .content h1{
 	font-size: 0.8vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(159, 159, 159);
     line-height: 1vw;
     text-align: center;
@@ -222,7 +222,7 @@ s {
 }
 .wrap2 .content h4{
 	font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(0, 198, 216);
     line-height: 2vw;
     text-align: center;
@@ -230,7 +230,7 @@ s {
 }
 .wrap2 .content h3{
 	font-size: 0.8vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(0, 198, 216);
     line-height: 1vw;
     text-align: center;
@@ -316,7 +316,7 @@ s {
 }
 .card p{
 	font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(159, 159, 159);
     line-height: 1.3vw;
     text-align: justify;
@@ -339,8 +339,8 @@ s {
     
 @media screen and (max-width: 900px){
     #about{
-        height: 260vw;
-        max-height: 800px;
+        height: 300vw;
+        max-height: 1000px;
         left: 0;
         top: 0;
         width: 100vw;
@@ -353,7 +353,7 @@ s {
     }
     .info2 {
         width: 80vw;
-        margin: 0vw auto 0 auto;
+        margin: 27vw auto 0 auto;
         top: -100px;
 
     }
