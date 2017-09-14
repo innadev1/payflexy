@@ -2,34 +2,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div id="header">
-	<div id="links_logo">
-		<div class="logo">
-			<img src="img/logo.png">
+	<div class="mobile">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+			<div class="logo">
+				<img src="img/logo.svg" style="height: 7vw; max-height: 40px">
+			</div>
+	<div class="nav">
+		<div class="exit"></div>
+		<div id="links_logo">
+			<ul class="links_logo">
+				<li scroll="about"><?php echo $language[$lang]['about company']?></li>
+				<li scroll=""><?php echo $language[$lang]['services'] ?></li>
+				<li scroll=""><?php echo $language[$lang]['contacts'] ?></li>
+			</ul>
 		</div>
-		<ul class="links_logo">
-			<li><?php echo $language[$lang]['about company'] ?></li>
-			<li><?php echo $language[$lang]['services'] ?></li>
-			<li><?php echo $language[$lang]['contacts'] ?></li>
-		</ul>
-	</div>
 
-	<div id="links">
-		<ul>
-			<li><?php echo $language[$lang]['login'] ?></li>
-			<li><?php echo $language[$lang]['register'] ?></li>
-		</ul>
-	</div>
+		<div id="links">
+			<ul>
+				<li><?php echo $language[$lang]['login'] ?></li>
+				<li><?php echo $language[$lang]['register'] ?></li>
+			</ul>
+		</div>
 
-	<div id="lang">
-		<ul>
-
-		
-			<li><a href="index.php?lang=en">EN</a></li>
-			<li>|</li>
-			<li><a href="index.php?lang=ru">RU</a></li>
-		</ul>
+		<div id="lang">
+			<ul>
+				<li><a href="index.php?lang=en">EN</a></li>
+				<li>|</li>
+				<li><a href="index.php?lang=ru">RU</a></li>
+			</ul>
+		</div>
 	</div>
-	
 </div>
 <div id="banner">
 	<canvas id="c1"></canvas>

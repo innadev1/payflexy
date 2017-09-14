@@ -54,8 +54,8 @@ $(function(){
 
 		ctx2.clearRect(0,0,c2w,c2h)
 
-		ctx2.drawImage(imgs[4],anim2.pos2.x,mouse.y*-40,c2w,c2h)
-		ctx2.drawImage(imgs[4],-c2w+anim2.pos2.x,mouse.y*-40,c2w,c2h)
+		ctx2.drawImage(imgs[4],anim2.pos2.x,mouse.y*-c2h*0.03,c2w,c2h)
+		ctx2.drawImage(imgs[4],-c2w+anim2.pos2.x,mouse.y*-c2h*0.03,c2w,c2h)
 		
 		ctx2.drawImage(imgs[2],anim2.pos.x,anim2.pos.y+(c2h*anim2.wave1.offset),c2w,c2h*0.6)
 		ctx2.drawImage(imgs[2],-c2w+anim2.pos.x,c2h*0.6+anim2.pos.y+(c2h*anim2.wave1.offset)-1,c2w,c2h*0.6)
@@ -66,9 +66,9 @@ $(function(){
 
 
 
-		ctx2.drawImage(imgs[3],anim2.pos.x,mouse.y*-80,c2w,c2h)
-		ctx2.drawImage(imgs[3],-c2w+anim2.pos.x,mouse.y*-80,c2w,c2h)
-		ctx2.fillRect(0,c2h+(mouse.y*-80)-2,c2w,c2h)
+		ctx2.drawImage(imgs[3],anim2.pos.x,mouse.y*-c2h*0.07,c2w,c2h)
+		ctx2.drawImage(imgs[3],-c2w+anim2.pos.x,mouse.y*-c2h*0.07,c2w,c2h)
+		ctx2.fillRect(0,c2h+(mouse.y*-c2h*0.07)-2,c2w,c2h)
 
 
 
@@ -144,6 +144,7 @@ $(function(){
 		ctx4.drawImage(imgs[10],-c4w+anim4.pos.x,-(mouse.y*80)+c4h*0.15,c4w,c4h)
 		ctx4.fillStyle= "#fff"
 		ctx4.fillRect(0,-1.1*c4h+(-mouse.y*40),c3w,c3h)
+		//console.log(-1.1*c4h+(-mouse.y*40))
 		ctx4.fillRect(0,c4h+(-mouse.y*80),c3w,c3h)
 
 		anim4.pos1.x += 0.5
@@ -170,8 +171,11 @@ $(function(){
 	var mouse = {x:0,y:0}
 
 	$( window ).on( "mousemove", function( event ) {
-    	mouse.x = ( event.clientX / Ww ) * 2 - 1;
-		mouse.y = - ( event.clientY /Wh ) * 2 + 1;
+		if (Ww>900) {
+    		mouse.x = ( event.clientX / Ww ) * 2 - 1;
+			mouse.y = - ( event.clientY /Wh ) * 2 + 1;
+			
+		}
 		//console.log(mouse)
 		//mouse_functions[mouse_function_now]();
     });
@@ -187,18 +191,25 @@ $(function(){
 	function setSizes(){
 
 
-	c1w = $('#banner').width()
-	c1h = $('#banner').height()
+		c1w = $('#banner').width()
+		c1h = $('#banner').height()
 
-	c2w = $('#about').width()
-	c2h = $('#about').height()
+		c2w = $('#about').width()
+		c2h = $('#about').height()
 
 
-	c3w = $('#second_wave').width()
-	c3h = $('#second_wave').height()
+		c3w = $('#second_wave').width()
+		c3h = $('#second_wave').height()
 
-	c4w = $('#footer_banner').width()
-	c4h = $('#footer_banner').height()
+		c4w = $('#footer_banner').width()
+		c4h = $('#footer_banner').height()+2
+
+		if (Ww<900) {
+			c1w *= 1.5
+			c2w *= 2
+			c3w *= 1.5
+			c4w *= 1.5
+		}
 
 	}
 
@@ -326,7 +337,7 @@ $(function(){
 		renderFun[3]()
 		renderFun[4]()
 
-		stats.html(statsCalc())
+		stats.html(statsCalc()+'<br>'+window.innerWidth)
 		requestAnimationFrame( render );
 
 	}
@@ -402,7 +413,7 @@ $(function(){
 
 		read = $(this).attr('read')
 		
-		$('.wrap2 div').removeClass('blue')
+		$('.wrap2 .content').removeClass('blue')
 		$(this).parent().parent().parent().parent().parent().addClass('blue')
 
 		var img;
@@ -460,7 +471,129 @@ $(function(){
 			}
 		}
 	})
+	var p1cout = 0;
+	var p1l = $('.wrap2 .content').length
+	var panable1 = true
+	console.log(p1l)
+
+
+
+
+	function panFun1(dir){
+		if (Ww<900&&panable1) {
+			panable1 = false
+			to = p1cout + dir
+			if (to == p1l) {
+				to = 0
+			}
+			if (to==-1) {
+				to=p1l-1
+			}
+			console.log(to)
+			$('.wrap2 .content:eq('+p1cout+')').animate({'left':-5*dir+'vw','opacity':0},400,function(){
+				$(this).css('display','none')
+				$('.wrap2 .content:eq('+to+')').css({'left':5*dir+'vw','opacity':0,'display':'block'}).animate({'left':0,'opacity':1},400,function(){
+					panable1 = true
+					p1cout = to
+				})
+			})
+		}
+	}
+
+	var panable2 = true
+	var p2l = $('.textaboutcard').length
+	var p2count = 0
+	function panFun2(dir){
+		if (Ww<900&&panable2) {
+			panable2 = false
+			to = p2count + dir
+
+			if (to == p2l) {
+				to = 0
+			}
+			if (to==-1) {
+				to=p2l-1
+			}
+
+			$('.textaboutcard:eq('+p2count+')').animate({'opacity':0,'left': -5*dir+'vw'},400,function(){
+				$('.textaboutcard').removeClass('visable')
+				$('.textaboutcard:eq('+to+')').css({'opacity':0,'left':5*dir+'vw'}).addClass('visable').animate({'opacity':'1','left':0},400,function(){
+					p2count=to
+					panable2 = true
+					
+				})
+			})
+
+			$('.card_photo').animate({'opacity':0,'left':-5*dir+'vw'},400,function(){
+				$(this).css({'background-image':'url('+cardImgs[to].src+')','left':5*dir+'vw'}).animate({'opacity':1,'left':0})
+			})
+
+		}
+	}
+
+
+
+		var pan1 = new Hammer(document.getElementById('pan1'));
+	pan1.on('panend', function(ev){
+			dirraw = ev.additionalEvent
+			dir = dirraw=='panright'? -1 : +1
+
+			panFun1(dir)
+	})
+
+	$('#n1').click(function(){
 	
+		panFun1(1)
+	})
+	
+
+
+	$('#p1').click(function(){
+		
+		panFun1(-1)
+	})
+
+	$('#n2').click(function(){
+	
+		panFun2(1)
+	})
+	
+
+
+	$('#p2').click(function(){
+		
+		panFun2(-1)
+	})
+
+	var pan2 = new Hammer(document.getElementById('pan2'))
+	pan2.on('panend',function(ev){
+		dirraw = ev.additionalEvent
+		dir = dirraw=='panright'? -1 : +1
+
+		panFun2(dir)
+	})
+
+	$('.mobile').click(function(){
+		$('.nav').css('display','block')
+		$('html').css('overflow','hidden')
+	})
+	$('.exit').click(function(){
+		$('.nav').css('display','none')
+		$('html').css('overflow','scroll')
+	})
+
+	var scrollPos = []
+
+	$('.links_logo li').click(function(){
+		
+		$('.nav').css('display','none')
+		$('html').css('overflow','scroll')
+
+		sto = $(this).attr('scroll')
+		soffset = $('#'+sto).offset()
+		$('body, html').animate({scrollTop:soffset.top})
+		//alert(soffset.top)
+	})
 
 
 })

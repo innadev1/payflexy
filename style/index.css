@@ -3,13 +3,16 @@ body{
     overflow-x: hidden;
 	font-family: 'Roboto', sans-serif;
 }
+s {
+    text-decoration: none;
+}
 #about{
 	height: 48.8vw;
     background-image: url(../img/about_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    width: 100%;
+    width: 100vw;
 	margin-top: 5vw;
 }
 
@@ -19,20 +22,21 @@ body{
     margin-left: 20vw;
 }
 .info1 h1{
-	font-size: 2.2vw;
-    font-weight: 500;
+	font-size: 2.1vw;
+    font-weight: 300;
     line-height: 2.4vw;
-    font-family: "Myriad Pro", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(0, 198, 216);
     text-align: left;
 	text-shadow: 0px 3px 22.4px rgba(188, 188, 188, 0.05);
 }
 .info1 p{
-	font-size: 0.9vw;
-    font-family: "Myriad Pro", sans-serif;
+	font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
     color: rgb(159, 159, 159);
     line-height: 1.3vw;
 	text-align: left;
+    font-weight: 300;
 }
 .info2{
 	width: 29vw;
@@ -46,14 +50,14 @@ body{
 	font-size: 2.2vw;
     font-weight: 500;
     line-height: 2.4vw;
-    font-family: "Myriad Pro", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     text-align: right;
 	text-shadow: 0px 3px 22.4px rgba(188, 188, 188, 0.05);
 }
 .info2 p{
-	font-size: 0.9vw;
-    font-family: "Myriad Pro", sans-serif;
+	font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
     color: white;
     line-height: 1.3vw;
 	text-align: right;
@@ -79,35 +83,36 @@ body{
 }
 .wrap div img{
 	width: 35%;
-    padding: vw;
+    
 }
 .wrap div h1{
 	font-size: 0.8vw;
-    font-family: "Myriad Pro", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(159, 159, 159);
     line-height: 1vw;
     text-align: center;
 	font-weight: 300;
 }
 #what_you_get h2{
-	font-size: 2.2vw;
-    font-weight: 500;
+	font-size: 2.1vw;
+    font-weight: 300;
     line-height: 2.4vw;
-    font-family: "Myriad Pro", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(0, 198, 216);
     text-align: center;
     text-shadow: 0px 3px 22.4px rgba(188, 188, 188, 0.05);
 	margin-top: 4vw;
 }
 #what_you_get p{
-	font-size: 0.7vw;
-    font-family: "Myriad Pro", sans-serif;
+	font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
     color: rgb(159, 159, 159);
-    line-height: 1vw;
+    line-height: 1.3vw;
     text-align: center;
     padding-left: 35vw;
     padding-right: 35vw;
     margin-top: 3vw;
+    font-weight: 300;
 }
 #second_wave{
 	height: 44.5vw;
@@ -147,7 +152,12 @@ body{
 }
 .disptext p{
     font-size:1vw;
+    font-family: 'Poppins', sans-serif;
+
     color: rgb(159, 159, 159);
+    line-height: 1.3vw;
+    font-weight: 300;
+
 
 }
 .disptext.visable {
@@ -159,12 +169,13 @@ body{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    justify-content: center;	
+    justify-content: center;
+    position: relative;	
 }
 .wrap2 table th{
 	height: 8vw;
 }
-.wrap2 div{
+.wrap2 .content{
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
     width: 16vw;
     height: 17vw;
@@ -172,8 +183,12 @@ body{
     padding: 1vw;
 	text-align:center;
     border-radius: 1vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 1;
 }
-.wrap2 div .img{
+.wrap2 .content .img{
 	background-size: 34%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -197,30 +212,35 @@ body{
 .ewallets.blue .img {
     background-image: url(../img/5w.png);
 }
-.wrap2 div h1{
+.wrap2 .content h1{
 	font-size: 0.8vw;
-    font-family: "Myriad Pro", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(159, 159, 159);
     line-height: 1vw;
     text-align: center;
 	font-weight: 300;
 }
-.wrap2 div h4{
+.wrap2 .content h4{
 	font-size: 1vw;
-    font-family: "Myriad Pro", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(0, 198, 216);
     line-height: 2vw;
     text-align: center;
 	font-weight: 300;
 }
-.wrap2 div h3{
+.wrap2 .content h3{
 	font-size: 0.8vw;
-    font-family: "Myriad Pro", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(0, 198, 216);
     line-height: 1vw;
     text-align: center;
 	font-weight: 300;
     cursor: pointer;
+}
+.wrap2 s{
+    text-decoration: none;
+    display: none;
+
 }
 .blue{
     background-color: #00c6d8;
@@ -255,18 +275,19 @@ body{
     text-decoration: underline;
 }
 #payment h2{
-    font-size: 1.5vw;
+    font-size: 2.2vw;
     font-family: "Roboto", sans-serif;
     color: rgb(0, 198, 216);
     text-transform: uppercase;
     text-align: center;
-    font-weight: 500;
+    font-weight: 300;
 	margin: 0;
 }
 .card{
 	padding-left: 22vw;
     padding-right: 22vw;
     display: none;
+    margin-top:2vw!important;
 }
 .textaboutcard{
 	width: 40vw;
@@ -274,6 +295,7 @@ body{
     display: none;
     opacity: 1;
     height: 20vw;
+    position: relative;
 }
 .textaboutcard.visable {
     display: block;
@@ -289,15 +311,17 @@ body{
     font-family: "Roboto", sans-serif;
     color: rgb(0, 198, 216);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 300;
     margin: 0;
 }
 .card p{
-	font-size: 0.9vw;
-    font-family: "Myriad Pro", sans-serif;
+	font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
     color: rgb(159, 159, 159);
-    line-height: 1.1vw;
+    line-height: 1.3vw;
     text-align: justify;
+    font-weight: 300;
+
 }
 .card_photo {
 	width: 20vw;
@@ -308,7 +332,195 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 1;
+    position: relative;
 }
-
+.info1 {
+}
+    
 @media screen and (max-width: 900px){
+    #about{
+        height: 260vw;
+        max-height: 800px;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        margin-top: 210px;
+    }
+    .info1 {
+        width: 80vw;
+        margin: 6vw auto 0 auto;
+        top: -180px;
+    }
+    .info2 {
+        width: 80vw;
+        margin: 0vw auto 0 auto;
+        top: -100px;
+
+    }
+    .info2 h1, .info1 h1 {
+        line-height: initial;
+        font-size: 20px;
+    }
+    .info2 p, .info1 p {
+        font-size: 15px;
+        line-height: initial;
+
+    }
+    #what_you_get {
+        height: 172vw;
+        max-height: 620px;
+    }
+    #what_you_get h2 {
+        font-size: 4.2vw;
+    }
+    #what_you_get .wrap{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        width: 90vw;   
+        margin: auto;
+    }
+    .wrap div {
+        width: 40vw;
+        height: 40vw;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        -webkit-flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-justify-content: flex-end;
+        max-height: 160px;
+    }
+    .wrap div h1 {
+        font-size: 13px;
+        line-height:17px;
+       
+    }
+    #what_you_get p{
+        font-size: 16px;
+        line-height: initial;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-top: 10vw;
+    }
+    .wrap div img {
+        width: 15vw;
+    }
+
+    #second_wave {
+        height: 80vw;
+    }
+    #payment {
+        margin-top: 10vw;
+        height: 350vw;
+        max-height: 1280px
+    }
+    #payment h2 {
+        font-size: 4.2vw;
+    }
+    .flex_button {
+        display: none;
+    }
+    .card{
+        flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        order: 0;
+    }
+    .card_photo {
+        width: 100%;
+        height: 30vw;
+    }
+    .card p {
+        font-size: 16px;
+        line-height: initial;
+        text-align: center;
+    }
+    .textaboutcard {
+        padding: 0;
+        width: 100%;
+        height: inherit;
+        order: 1;
+        margin-top: 5vw
+
+    }
+    .card h1 {
+        font-size: 4.2vw;
+        text-align: center;
+
+    }
+    .wrap2 .content h1{
+        font-size: 15px;
+        line-height: initial;
+    }
+    .blue h1{
+        color: rgb(159, 159, 159) !important;
+    }
+    .blue h4{
+        color: rgb(0, 198, 216)!important;
+    }
+    .wrap2 .content {
+        display: none;
+        width: 100vw;
+        height: 210vw;
+        box-sizing: border-box;
+        padding: 0 10vw;
+        margin: 0;
+        max-height: 710px
+
+    }
+    .wrap2 .content:nth-child(2){
+        display: block;
+    }
+    .blue {
+        background-color: #fff;
+    }
+    .bank.blue .img {
+        background-image: url(../img/7.png);
+    }
+    .western.blue .img {
+        background-image: url(../img/6.png);
+    }
+    .ewallets.blue .img {
+        background-image: url(../img/5.png);
+    }
+    .wrap2 table th {
+        height: 30vw;
+    }
+    .wrap2 .content h4{
+        font-size: 4.2vw;
+        line-height: initial;
+    }
+    .wrap2 .content h3 {
+        display: none;
+    }
+    .wrap2 s {
+        display: inline;
+    }
+    .display {
+        display: none !important;
+    }
+    .arrows {
+        z-index: 10;
+    }
+    .arrows .next, .arrows .prev {
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        top: 8%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    .arrows .next{
+        background-image: url(../img/next.png);
+        right: 2.5vw;
+    }
+    .arrows .prev{
+        background-image: url(../img/prev.png);
+        left: 2.5vw;
+    }
+
+
 }

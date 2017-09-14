@@ -9,7 +9,7 @@
 		$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 		
 		if(!preg_match($email_exp,$email)) {
-			echo "<script>alert(<?php echo $language[$lang]['enter'] ?>);</script>";
+			echo "<script>alert( '".$language[$lang]['enter']."');</script>";
 		}else{
 		
 			$row = getDataFromDatabase("SELECT email FROM emails WHERE email=:email", [ 
