@@ -265,8 +265,8 @@
 	
 	<div class="footer_content">
 		<div class="socilas">
-			<img src="img/socials/twitter.png">
-			<img src="img/socials/instagram.png">
+			<img src="img/socials/linkedin.png">
+			
 			<img src="img/socials/facebook.png">
 		</div>
 	</div>

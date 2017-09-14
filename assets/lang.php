@@ -60,13 +60,13 @@
 
 
     $language['en']['master'] = 'MasterCard Money send и VISA Direct';
-    $language['en']['master_t'] = 'Payment of services systems Mastercard and VISA, which allows cardholders to make money transfers between themselves. To perform the transfer, you only need to know the card number of the recipient.';
+    $language['en']['master_t'] = 'Payment of services systems Mastercard and VISA, which allows cardholders to make money transfers between themselves.<s> To perform the transfer, you only need to know the card number of the recipient.</s>';
 
 
     $language['en']['multi'] = 'Multi-currency processing ';
     $language['en']['multi_t'] = 'Multi-currency processing allows to accept payments online from all over the world, in a currency which is most convenient for you and your customer. For the customer it is convenient most of all because they can make a payment on your website in their national currency with no conversion. And it is convenient for you, because as an owner of our multi-currency payment solution you will get the possibility to make settlements with your clients, partners and suppliers in several currencies.';
 
-    $language['en']['c_verification'] = 'verification';
+    $language['en']['c_verification'] = 'Verification';
     $language['en']['c_verification_t'] = ' Card verification is necessary in order to eliminate the possibility of fraud transactions. One of customer authorization methods is 3-D secure technology. This method is used in order to protect cards from unsanctioned operations. <br><br>
         <b>3-D secure protocol is:</b><br><br>
         Security of personal data – the card is protected with personal password, which is known only to the card owner and is valid only for one transaction in real time; <br><br>
@@ -125,8 +125,6 @@
 
     $language['en']['adressus'] = 'PayFlexy <br> +371 29898289<br> info@payflexy.com';
 
-
-
     $language['en']['name_em'] = 'name:';
     $language['en']['phone_em'] = 'Phone:';
     $language['en']['email_em'] = 'Email:';
@@ -137,6 +135,7 @@
 
     $language['en']['sendsende'] = 'Your email was sent';
 
+// ----------------------------------------------------------------------------------->
 
     // RU
         // HEADER
@@ -176,7 +175,7 @@
     $language['ru']['carts_t'] = 'VISA и MasterCard – самые известные и популярные системы платежных карт. Подключая платежную страницу для приема платежей по картам Visa и MasterCard, Вы получаете возможность принимать платежи в фиатной валюте практически со всего мира прямо на Ваш счет. При подключении процессинга платежных карт важно учитывать, что данные системы имеют собственные требования и условия для приема платежей, контролируют транзакции и выполнение установленных международных правил относительно финансовых операций.';
     
      $language['ru']['master'] = 'MasterCard Money send и VISA Direct';
-    $language['ru']['master_t'] = 'MasterCard Money send и VISA Direct сервисы платежных систем Mastercard и VISA, позволяющий держателям карт осуществлять денежные переводы между собой.Чтобы выполнить перевод, необходимо знать только номер карты получателя.';
+    $language['ru']['master_t'] = 'MasterCard Money send и VISA Direct сервисы платежных систем Mastercard и VISA<s>, позволяющий держателям карт осуществлять денежные переводы между собой.Чтобы выполнить перевод, необходимо знать только номер карты получателя.</s>';
 
     $language['ru']['multi'] = 'Мультивалютный процессинг ';
     $language['ru']['multi_t'] = 'Мультивалютный процессинг позволяет принимать платежи онлайн со всего мира, в удобной валюте как для Вас, так и для клиента. Для клиента - это очень удобно, так как он может производить оплату с Вашего сайта в своей национальной валюте и не думать о конвертации. Это выгодно для Вас – ведь у владельца нашего мультивалютного платежного решения появляется возможность проводить валютные транзакции со своими клиентами, партнерами и поставщиками сразу в нескольких валютах.';
@@ -226,9 +225,7 @@
     $language['ru']['message'] = 'Сообщение';
     $language['ru']['ОТПРАВИТЬ'] = 'ОТПРАВИТЬ';
 
-
     $language['ru']['adressus'] = 'PayFlexy <br> +371 29898289<br> info@payflexy.com';
-
 
     $language['ru']['error_message_n'] = 'Пожалуйста, введите имя';
     $language['ru']['error_message_n2'] = 'Только буквы!';

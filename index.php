@@ -34,11 +34,14 @@
 
 				<?php if($_GET['f']=='e'){ ?>
 					formext = true
+					
 						$('.firstform form, .firstform .button p ').css('display','none')
 						$('.secondform').css({'display':'block','opacity':'1'})
 
-						text = lang=='en'? 'back' : 'po ru'
-						$('#formToggle').html(text)
+						text = lang=='en'? 'back' : 'назад'
+						$('#formToggle').html(text).parent().addClass('back')
+						$('.firstform').css('margin-top','10vw')
+
 					
 				<?php }?>
 				
@@ -102,7 +105,7 @@
 				
 				<div class="flex_button">
 					<div><button><?php echo $language[$lang]['carts'] ?></button></div>
-					<div><button><?php echo $language[$lang]['master'] ?></button></div>
+					<!-- <div><button><?php echo $language[$lang]['master'] ?></button></div> -->
 					<div><button><?php echo $language[$lang]['multi'] ?></button></div>
 					<div><button><?php echo $language[$lang]['c_verification'] ?></button></div>
 					<div><button><?php echo $language[$lang]['anti_module'] ?></button></div>
@@ -119,11 +122,11 @@
 						<p><?php echo $language[$lang]['carts_t'] ?>
 						</p>
 					</div>
-					<div class="textaboutcard">
+					<!-- <div class="textaboutcard">
 						<h1><?php echo $language[$lang]['master'] ?></h1>
 						<p><?php echo $language[$lang]['master_t'] ?>
 						</p>
-					</div>
+					</div> -->
 					<div class="textaboutcard">
 						<h1><?php echo $language[$lang]['multi'] ?></h1>
 						<p><?php echo $language[$lang]['multi_t'] ?>
@@ -183,7 +186,7 @@
 						</tr>
 						</table>
 					</div>
-					<div class="content bank blue">
+					<div class="content bank">
 					<table>
 					<tr>
 						<th class="img">
@@ -196,6 +199,24 @@
 						<h4><?php echo $language[$lang]['b_tranfers'] ?></h4>
 						<h1><?php echo $language[$lang]['b_tranfers_t'] ?></h1>
 						<h3 read="bank"><?php echo $language[$lang]['read_more'] ?></h3>
+
+					  </td>
+					</tr>
+					</table>
+					</div>
+					<div class="content master">
+					<table>
+					<tr>
+						<th class="img">
+							
+						</th>
+					</tr>
+					<tr>
+					  <td>
+
+						<h4><?php echo $language[$lang]['master']?></h4>
+						<h1><?php echo $language[$lang]['master_t']?></h1>
+						<h3 read="master"><?php echo $language[$lang]['read_more'] ?></h3>
 
 					  </td>
 					</tr>
@@ -219,6 +240,12 @@
 								<h2><?php echo $language[$lang]['b_tranfers'] ?></h2>
 								<p>
 								<?php echo $language[$lang]['b_tranfers_t'] ?>
+								</p>
+							</div>
+							<div id="master" class="disptext">
+								<h2><?php echo $language[$lang]['master'] ?></h2>
+								<p>
+								<?php echo $language[$lang]['master_t'] ?>
 								</p>
 							</div>
 						</div>

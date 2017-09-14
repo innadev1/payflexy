@@ -48,13 +48,14 @@ s {
 
 }
 .info2 h1{
+    text-shadow: 0 0 10px rgba(0,0,40,0.3);
 	font-size: 2.2vw;
     font-weight: 500;
     line-height: 2.4vw;
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: right;
-	text-shadow: 0px 3px 22.4px rgba(188, 188, 188, 0.05);
+	
 }
 .info2 p{
 	font-size: 1vw;
@@ -188,6 +189,7 @@ s {
     top: 0;
     left: 0;
     opacity: 1;
+    margin-top: 4vw;
 }
 .wrap2 .content .img{
 	background-size: 34%;
@@ -213,6 +215,12 @@ s {
 .ewallets.blue .img {
     background-image: url(../img/5w.png);
 }
+.master .img {
+    background-image: url(../img/8.png);
+}
+.master.blue .img {
+    background-image: url(../img/8w.png);
+}
 .wrap2 .content h1{
 	font-size: 0.8vw;
     font-family: 'Roboto', sans-serif;
@@ -225,7 +233,7 @@ s {
 	font-size: 1vw;
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 198, 216);
-    line-height: 2vw;
+    line-height: 1.2vw;
     text-align: center;
 	font-weight: 300;
 }
@@ -292,7 +300,7 @@ s {
 }
 .textaboutcard{
 	width: 40vw;
-    padding: 5vw;
+    padding: 2vw;
     display: none;
     opacity: 1;
     height: 20vw;
@@ -361,6 +369,7 @@ s {
     .info2 h1, .info1 h1 {
         line-height: initial;
         font-size: 20px;
+        text-shadow: none;
     }
     .info2 p, .info1 p {
         font-size: 15px;

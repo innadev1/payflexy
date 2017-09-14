@@ -37,7 +37,7 @@ margin: 18vw 0 0 0;
 	-webkit-align-items: flex-end;
 	height: auto;
     box-shadow: 0 0 30px rgba(0,0,0,0.2);
-    margin-top: 23vw;
+    margin-top: 25.7vw;
 	padding-top: 3vw;
 	padding-bottom: 3vw;
 }
@@ -130,12 +130,12 @@ margin: 18vw 0 0 0;
     padding-top: 1vw;
 }
 .socilas img{
-	width: 17%;
+	width: 25%;
     padding: 0.5vw;
     padding-top: 1vw;
 }
 .firstform {
-	margin-top: 10vw !important;
+	margin-top: 18vw ;
 }
 .secondform {
 	width: 45%;

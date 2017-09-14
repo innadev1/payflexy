@@ -391,7 +391,7 @@ $(function(){
 
 	banksImgs = []
 
-	for (var i = 0; i < 3; i++) {
+	for (var i = 0; i < 4; i++) {
 
 		banksImgs[i] = {}
 
@@ -426,7 +426,10 @@ $(function(){
 					img = 1;
 					break;
 				case "bank":
-					img = 2;	
+					img = 2;
+					break
+				case "master":
+					img = 3;	
 			}
 			//alert(img)
 
@@ -451,16 +454,18 @@ $(function(){
 		if (formClick) {
 			if (!formext) {
 				formClick = false
-				text = lang=='en'? 'back' : 'po ru'
+				text = lang=='en'? 'back' : 'назад'
 				$(this).html(text)
 				$(this).parent().addClass('back')
 				$('.firstform form, .firstform .button p ').css('display','none')
+				$('.firstform').css('margin-top','10vw')
 				$('.secondform').css('display','block').animate({'opacity':1},400,function(){
 					formClick = true
 					formext = true
 				})
 			}else{
 				$('.secondform').animate({'opacity':0},400,function(){
+				$('.firstform').css('margin-top','18vw')
 				text = lang=='en'? 'or click here' : 'или нажмите здесь'
 
 					$(this).css('display','none')
