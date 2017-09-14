@@ -16,7 +16,7 @@ a{
 .links_logo{
 	position: absolute;
     font-size: 1vw;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
     top: 1.5vw;
     left: 17vw;
     color: rgb(157, 157, 157);
@@ -38,7 +38,8 @@ a{
 #links{
 	position: absolute;
     font-size: 1vw;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
     top: 1.5vw;
     right: 11vw;
     color: rgb(157, 157, 157);
@@ -52,7 +53,7 @@ a{
 #lang{
 	position: absolute;
     font-size: 1vw;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
     top: 1.5vw;
     right: 3vw;
     color: rgb(157, 157, 157);
@@ -128,7 +129,7 @@ a{
     background-color: #fff;
 }
 #c2 {
-    left: -50vw;
+    left: -100vw;
 }
 #c1{
     left: -25vw;
@@ -217,6 +218,7 @@ a{
     color: #fff;
     display: flex;
     display: -webkit-flex;
+     
 
 }
 }

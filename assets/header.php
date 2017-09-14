@@ -14,9 +14,9 @@
 		<div class="exit"></div>
 		<div id="links_logo">
 			<ul class="links_logo">
-				<li><?php echo $language[$lang]['about company']?></li>
-				<li><?php echo $language[$lang]['services'] ?></li>
-				<li><?php echo $language[$lang]['contacts'] ?></li>
+				<li scroll="about"><?php echo $language[$lang]['about company']?></li>
+				<li scroll=""><?php echo $language[$lang]['services'] ?></li>
+				<li scroll=""><?php echo $language[$lang]['contacts'] ?></li>
 			</ul>
 		</div>
 
@@ -29,12 +29,7 @@
 
 		<div id="lang">
 			<ul>
-
-			
-
-
 				<li><a href="index.php?lang=en">EN</a></li>
-
 				<li>|</li>
 				<li><a href="index.php?lang=ru">RU</a></li>
 			</ul>

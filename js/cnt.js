@@ -144,7 +144,7 @@ $(function(){
 		ctx4.drawImage(imgs[10],-c4w+anim4.pos.x,-(mouse.y*80)+c4h*0.15,c4w,c4h)
 		ctx4.fillStyle= "#fff"
 		ctx4.fillRect(0,-1.1*c4h+(-mouse.y*40),c3w,c3h)
-		console.log(-1.1*c4h+(-mouse.y*40))
+		//console.log(-1.1*c4h+(-mouse.y*40))
 		ctx4.fillRect(0,c4h+(-mouse.y*80),c3w,c3h)
 
 		anim4.pos1.x += 0.5
@@ -413,7 +413,7 @@ $(function(){
 
 		read = $(this).attr('read')
 		
-		$('.wrap2 div').removeClass('blue')
+		$('.wrap2 .content').removeClass('blue')
 		$(this).parent().parent().parent().parent().parent().addClass('blue')
 
 		var img;
@@ -472,7 +472,7 @@ $(function(){
 		}
 	})
 	var p1cout = 0;
-	var p1l = $('.wrap2 div').length
+	var p1l = $('.wrap2 .content').length
 	var panable1 = true
 	console.log(p1l)
 
@@ -490,9 +490,9 @@ $(function(){
 				to=p1l-1
 			}
 			console.log(to)
-			$('.wrap2 div:eq('+p1cout+')').animate({'left':-5*dir+'vw','opacity':0},400,function(){
+			$('.wrap2 .content:eq('+p1cout+')').animate({'left':-5*dir+'vw','opacity':0},400,function(){
 				$(this).css('display','none')
-				$('.wrap2 div:eq('+to+')').css({'left':5*dir+'vw','opacity':0,'display':'block'}).animate({'left':0,'opacity':1},400,function(){
+				$('.wrap2 .content:eq('+to+')').css({'left':5*dir+'vw','opacity':0,'display':'block'}).animate({'left':0,'opacity':1},400,function(){
 					panable1 = true
 					p1cout = to
 				})
@@ -541,7 +541,29 @@ $(function(){
 			panFun1(dir)
 	})
 
+	$('#n1').click(function(){
+	
+		panFun1(1)
+	})
+	
 
+
+	$('#p1').click(function(){
+		
+		panFun1(-1)
+	})
+
+	$('#n2').click(function(){
+	
+		panFun2(1)
+	})
+	
+
+
+	$('#p2').click(function(){
+		
+		panFun2(-1)
+	})
 
 	var pan2 = new Hammer(document.getElementById('pan2'))
 	pan2.on('panend',function(ev){
@@ -560,8 +582,17 @@ $(function(){
 		$('html').css('overflow','scroll')
 	})
 
+	var scrollPos = []
+
 	$('.links_logo li').click(function(){
-		alert('GOOOOO')
+		
+		$('.nav').css('display','none')
+		$('html').css('overflow','scroll')
+
+		sto = $(this).attr('scroll')
+		soffset = $('#'+sto).offset()
+		$('body, html').animate({scrollTop:soffset.top})
+		//alert(soffset.top)
 	})
 
 
