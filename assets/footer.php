@@ -68,47 +68,47 @@
 		$errors = ['name'=>0,'project'=>0,'number'=>0, 'email'=>0, 'message'=>0];
 // --------------------------------------------->>>
 		// name
-		// if(empty($name)) {
-		// 	$error_message_n .= '<p style = "color: red;">Please enter name.</p>';
-		// 	$errors['name'] = 1;
-		// }
-		// $email_exp_a = "/[^A-Za-z]/";
+		if(empty($name)) {
+			$error_message_n .= '<p style = "color: red;"> '.$language[$lang]['error_message_n'].'</p>';
+			$errors['name'] = 1;
+		}
+		$email_exp_a = "/[^A-Za-z]/";
 		
 		if(preg_match($email_exp_a,$_POST['name'])) {
-			$error_message_n2 .= '<p style = "color: red;">Only alphabet!</p>';
+			$error_message_n2 .= '<p style = "color: red;">'.$language[$lang]['error_message_n2'].'</p>';
 			$errors['name'] = 1;
 		}
 		if(strlen($name) < 2){
-			$error_message_n3 .= '<p style = "color: red;">Name is too short.</p>';
+			$error_message_n3 .= '<p style = "color: red;">'.$language[$lang]['error_message_n3'].'</p>';
 			$errors['name'] = 1;
 			
 		}
 // --------------------------------------------->>>
 		// project
 		if(empty($project)) {
-			$error_message_p .= '<p style = "color: red;">Please enter project name.</p>';
+			$error_message_p .= '<p style = "color: red;">'.$language[$lang]['error_message_p'].'</p>';
 			$errors['project'] = 1;
 		}
 		if(strlen($project) > 20){
-			$error_message_p2 .= '<p style = "color: red;">Name of porject is too long.</p>';
+			$error_message_p2 .= '<p style = "color: red;">'.$language[$lang]['error_message_p2'].'</p>';
 			$errors['project'] = 1;
 			
 		}
 		if(strlen($project) < 2){
-			$error_message_p3 .= '<p style = "color: red;">Name of project is too short.</p>';
+			$error_message_p3 .= '<p style = "color: red;">'.$language[$lang]['error_message_p3'].'</p>';
 			$errors['project'] = 1;
 			
 		}
 // --------------------------------------------->>> 
 		// Phone
 		if(strlen($number) < 7) {
-        	$error_message_pho .= '<p style = "color: red;">Phone number too short.</p>';
+        	$error_message_pho .= '<p style = "color: red;">'.$language[$lang]['error_message_pho'].'</p>';
 			$errors['number'] = 1;
 		}
 		$email_exp_n = "/[^0-9]/";
 		
 		if(preg_match($email_exp_n,$_POST["number"])) {
-			$error_message_pho2 .= '<p style = "color: red;">only numbers!</p>';
+			$error_message_pho2 .= '<p style = "color: red;">'.$language[$lang]['error_message_pho2'].'</p>';
 			$errors['number'] = 1;
 		}
 // --------------------------------------------->>>>
@@ -117,18 +117,18 @@
     	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 	
     	if(!preg_match($email_exp,$email)) {
-        	$error_message_em .= '<p style = "color: red;">Please enter email!</p>';
+        	$error_message_em .= '<p style = "color: red;">'.$language[$lang]['proj.error_message_em'].'</p>';
 			$errors['email'] = 1;
 		}
 		
 // --------------------------------------------->>>
 		// messege
 		if(empty($message)) {
-			$error_message_m .= '<p style = "color: red;">Please enter text.</p>';
+			$error_message_m .= '<p style = "color: red;">'.$language[$lang]['error_message_m'].'</p>';
 			$errors['message'] = 1;
 		}
 		if(strlen($message) > 1000) {
-        	$error_message_m2 .= '<p style = "color: red;">Message too long.</p>';
+        	$error_message_m2 .= '<p style = "color: red;">'.$language[$lang]['error_message_m2'].'</p>';
 			$errors['message'] = 1;
 		}
 		if(empty($error_message_n2) && empty($error_message_n3) && empty($error_message_p) && empty($error_message_p2)
