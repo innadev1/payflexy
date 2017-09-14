@@ -451,8 +451,8 @@ $(function(){
 		if (formClick) {
 			if (!formext) {
 				formClick = false
-
-				$(this).html('back')
+				text = lang=='en'? 'back' : 'po ru'
+				$(this).html(text)
 				$(this).parent().addClass('back')
 				$('.firstform form, .firstform .button p ').css('display','none')
 				$('.secondform').css('display','block').animate({'opacity':1},400,function(){
@@ -461,8 +461,10 @@ $(function(){
 				})
 			}else{
 				$('.secondform').animate({'opacity':0},400,function(){
+				text = lang=='en'? 'or click here' : 'или нажмите здесь'
+
 					$(this).css('display','none')
-					$('#formToggle').html('or click here').parent().removeClass('back')
+					$('#formToggle').html(text).parent().removeClass('back')
 						$('.firstform form, .firstform .button p ').css('display','block')
 						formext = false
 

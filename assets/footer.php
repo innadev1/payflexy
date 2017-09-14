@@ -256,8 +256,8 @@
 <div id="footer" class="flex">
 	<div class="footer_content"><p><?php echo $language[$lang]['adressus'] ?></p></div>
 	
-	<div class="footer_content"><p><?php echo $language[$lang]['phoneus'] ?>
-	</p></div>
+	<!-- <div class="footer_content"><p><?php echo $language[$lang]['phoneus'] ?> -->
+	<!-- </p></div> -->
 	
 	<div class="footer_content" id="partners">
 		<img src="img/partners.png">

@@ -149,6 +149,8 @@ a{
     -webkit-flex-direction: column;
     -webkit-justify-content: space-between;
     z-index: 10;
+    max-height: 35px;
+    max-width: 50px;
 }
 .mobile div {
     width: 100%;

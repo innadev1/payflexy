@@ -18,8 +18,9 @@
 		<script type="text/javascript" src="js/hammer.js"></script>		
 		<script type="text/javascript" src="js/cnt.js"></script>		
 		<script>
-			var lang = <?php echo $lang ?>
-				alert(lang)
+			var lang = '<?php echo $lang ?>';
+			//alert(lang)
+				
 		</script>
 		<?php if(isset($_GET['f'])){ ?>
 			<script>
@@ -35,8 +36,11 @@
 					formext = true
 						$('.firstform form, .firstform .button p ').css('display','none')
 						$('.secondform').css({'display':'block','opacity':'1'})
+
+						text = lang=='en'? 'back' : 'po ru'
+						$('#formToggle').html(text)
 					
-				<? }?>
+				<?php }?>
 				
 			})
 			</script>

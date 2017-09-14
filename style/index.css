@@ -5,6 +5,7 @@ body{
 }
 s {
     text-decoration: none;
+
 }
 #about{
 	height: 48.8vw;
@@ -178,7 +179,7 @@ s {
 .wrap2 .content{
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
     width: 16vw;
-    height: 17vw;
+    height: 18vw;
     margin: 1vw;
     padding: 1vw;
 	text-align:center;
@@ -353,7 +354,7 @@ s {
     }
     .info2 {
         width: 80vw;
-        margin: 27vw auto 0 auto;
+        margin: 55vw auto 0 auto;
         top: -100px;
 
     }

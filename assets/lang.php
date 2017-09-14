@@ -123,7 +123,7 @@
     $language['en']['error_message_m'] = 'Please enter text.';
     $language['en']['error_message_m2'] = 'Message too long.';
 
-    $language['en']['adressus'] = '© ООО «Бонусный клуб», 105264, <br> Moscow, 9 Parkovaja street <br> House 39, office 210';
+    $language['en']['adressus'] = 'PayFlexy <br> +371 29898289<br> info@payflexy.com';
     $language['en']['phoneus'] = '+7 (499) 350-42-14 <br> Support service from 10:00 till 19:00 Moscow time';
 
     $language['en']['name_em'] = 'name:';
@@ -223,7 +223,7 @@
     $language['ru']['ОТПРАВИТЬ'] = 'ОТПРАВИТЬ';
 
 
-    $language['ru']['adressus'] = '© ООО «Бонусный клуб», 105264, <br> г. Москва, улица 9-я Парковая, <br> дом 39, офис 210';
+    $language['ru']['adressus'] = 'PayFlexy <br> +371 29898289<br> info@payflexy.com';
     $language['ru']['phoneus'] = '+7 (499) 350-42-14 <br> Служба поддержки с 10:00 до 19:00 МСК';
 
 
