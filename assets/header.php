@@ -7,8 +7,11 @@
 		<div></div>
 		<div></div>
 	</div>
-			<div class="logo">
+			<!--<div class="logo">
 				<img src="img/logo.svg" style="height: 7vw; max-height: 40px">
+			</div>-->
+			<div class="logo">
+				<img src="img/flexy_logo.png" style="display: block;height: 24px; max-height: 40px; padding-top: 1px; padding-left: 51px;">
 			</div>
 	<div class="nav">
 		<div class="exit"></div>

@@ -60,7 +60,7 @@
 
 
     $language['en']['master'] = 'MasterCard Money send и VISA Direct';
-    $language['en']['master_t'] = 'Payment of services systems Mastercard and VISA, which allows cardholders to make money transfers between themselves.<s> To perform the transfer, you only need to know the card number of the recipient.</s>';
+    $language['en']['master_t'] = 'Payment of services systems Mastercard and VISA, which allows cardholders to make money transfers between themselves. To perform the transfer, you only need to know the card number of the recipient.';
 
 
     $language['en']['multi'] = 'Multi-currency processing ';
@@ -175,7 +175,7 @@
     $language['ru']['carts_t'] = 'VISA и MasterCard – самые известные и популярные системы платежных карт. Подключая платежную страницу для приема платежей по картам Visa и MasterCard, Вы получаете возможность принимать платежи в фиатной валюте практически со всего мира прямо на Ваш счет. При подключении процессинга платежных карт важно учитывать, что данные системы имеют собственные требования и условия для приема платежей, контролируют транзакции и выполнение установленных международных правил относительно финансовых операций.';
     
      $language['ru']['master'] = 'MasterCard Money send и VISA Direct';
-    $language['ru']['master_t'] = 'MasterCard Money send и VISA Direct сервисы платежных систем Mastercard и VISA<s>, позволяющий держателям карт осуществлять денежные переводы между собой.Чтобы выполнить перевод, необходимо знать только номер карты получателя.</s>';
+    $language['ru']['master_t'] = 'MasterCard Money send и VISA Direct сервисы платежных систем Mastercard и VISA, позволяющий держателям карт осуществлять денежные переводы между собой.Чтобы выполнить перевод, необходимо знать только номер карты получателя.';
 
     $language['ru']['multi'] = 'Мультивалютный процессинг ';
     $language['ru']['multi_t'] = 'Мультивалютный процессинг позволяет принимать платежи онлайн со всего мира, в удобной валюте как для Вас, так и для клиента. Для клиента - это очень удобно, так как он может производить оплату с Вашего сайта в своей национальной валюте и не думать о конвертации. Это выгодно для Вас – ведь у владельца нашего мультивалютного платежного решения появляется возможность проводить валютные транзакции со своими клиентами, партнерами и поставщиками сразу в нескольких валютах.';
